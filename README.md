@@ -20,6 +20,8 @@ El prototipo permite:
 3. Procesar videos de fútbol robótico.
 4. Clasificar visualmente robots entre equipo rojo y equipo azul.
 5. Generar videos anotados y registros JSON.
+6. Explorar resultados desde una plataforma web.
+7. Generar mapas de calor, mapas tácticos aproximados y narrativa automática.
 
 ## Requisitos
 
@@ -71,6 +73,50 @@ python scripts/segment_robot_soccer_video.py partido.mp4 \
   --out outputs/sam3/partido_segmentado.mp4 \
   --json-out outputs/sam3/partido_segmentado.json
 ```
+
+## Plataforma web
+
+Iniciar el servidor:
+
+```bash
+source .venv-sam3/bin/activate
+python app.py
+```
+
+Abrir:
+
+```text
+http://127.0.0.1:5050
+```
+
+La plataforma permite:
+
+- Cargar un video desde el navegador.
+- Ejecutar el análisis SAM en segundo plano.
+- Reproducir el resultado segmentado.
+- Consultar métricas de presencia visual.
+- Revisar mapas de calor por equipo.
+- Explorar posiciones normalizadas en un mapa táctico.
+- Leer una narrativa automática del análisis.
+
+Los resultados se almacenan localmente en `outputs/sam3/`. Los videos de entrada,
+pesos de modelos y resultados generados están excluidos del repositorio público.
+
+## Referencias del curso FutBotMX
+
+El diseño del pipeline tomó como referencia conceptual los notebooks de formación
+compartidos para la competencia, principalmente:
+
+- NB09: segmentación de video, tracking y filtrado previo a SAM.
+- NB10: fundamentos de homografía y campo canónico.
+- NB11: detección HSV y uso de `BOTTOM_CENTER` para representar robots.
+- NB12: acumulación temporal de máscaras y mapas de calor.
+- NB13: integración nativa de SAM 3 desde Hugging Face.
+
+La implementación de este repositorio es propia. Los notebooks del curso no se
+redistribuyen y permanecen fuera del historial Git. La calibración exacta por
+homografía todavía está planificada; el mapa táctico actual usa normalización de
+coordenadas de imagen.
 
 ## Colores de visualización
 

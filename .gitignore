@@ -30,6 +30,8 @@ PASAPORTE*.pdf
 
 # Generated artifacts (selected samples may be force-added later)
 outputs/
+data/uploads/
+tmp/
 
 # Local environment and editor files
 .env

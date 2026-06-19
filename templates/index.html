@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SAMurIAs | FutBotMX Analytics</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">S</span>
+      <div>
+        <strong>SAMurIAs</strong>
+        <span>FutBotMX Analytics</span>
+      </div>
+    </div>
+    <div class="system-status">
+      <span class="status-dot"></span>
+      SAM 3.1 listo
+    </div>
+  </header>
+
+  <div class="app-shell">
+    <aside class="sidebar">
+      <section class="upload-section">
+        <div class="section-heading">
+          <span>Nuevo análisis</span>
+          <small>MP4, MOV o WebM</small>
+        </div>
+        <form id="upload-form">
+          <label class="file-drop" for="video-input">
+            <span class="upload-symbol">↑</span>
+            <strong>Seleccionar video</strong>
+            <span id="file-label">Ningún archivo seleccionado</span>
+          </label>
+          <input id="video-input" name="video" type="file" accept="video/*" hidden required>
+          <label class="field-label" for="analysis-name">Nombre del análisis</label>
+          <input id="analysis-name" name="name" type="text" placeholder="Partido semifinal">
+          <div class="form-row">
+            <label>
+              <span>Frecuencia</span>
+              <select name="sample_fps">
+                <option value="1">1 fps</option>
+                <option value="2">2 fps</option>
+                <option value="5">5 fps</option>
+              </select>
+            </label>
+            <label>
+              <span>Resolución</span>
+              <select name="max_width">
+                <option value="960">960 px</option>
+                <option value="1280">1280 px</option>
+                <option value="1920">Original</option>
+              </select>
+            </label>
+          </div>
+          <button class="primary-button" type="submit">
+            <span>▶</span>
+            Analizar partido
+          </button>
+        </form>
+        <div id="job-status" class="job-status" hidden>
+          <div class="progress-track"><span></span></div>
+          <strong>Procesando video</strong>
+          <small id="job-message">Preparando análisis</small>
+        </div>
+      </section>
+
+      <section class="analysis-list-section">
+        <div class="section-heading">
+          <span>Análisis disponibles</span>
+          <button id="refresh-button" class="icon-button" type="button" title="Actualizar">↻</button>
+        </div>
+        <div id="analysis-list" class="analysis-list"></div>
+      </section>
+    </aside>
+
+    <main class="workspace">
+      <section class="workspace-header">
+        <div>
+          <p class="eyebrow">ANÁLISIS DE PARTIDO</p>
+          <h1 id="analysis-title">Selecciona un análisis</h1>
+        </div>
+        <div class="legend">
+          <span><i class="red"></i>Equipo rojo</span>
+          <span><i class="blue"></i>Equipo azul</span>
+          <span><i class="yellow"></i>Balón</span>
+          <span><i class="green"></i>Cancha</span>
+        </div>
+      </section>
+
+      <section id="empty-state" class="empty-state">
+        <span class="empty-icon">◎</span>
+        <h2>No hay un partido seleccionado</h2>
+        <p>Carga un video o elige uno de los análisis disponibles.</p>
+      </section>
+
+      <div id="analysis-content" hidden>
+        <section class="metric-strip">
+          <article>
+            <span>Muestras</span>
+            <strong id="metric-frames">0</strong>
+          </article>
+          <article>
+            <span>Duración analizada</span>
+            <strong id="metric-duration">0 s</strong>
+          </article>
+          <article>
+            <span>Máx. robots</span>
+            <strong id="metric-robots">0</strong>
+          </article>
+          <article>
+            <span>Balón visible</span>
+            <strong id="metric-ball">0%</strong>
+          </article>
+        </section>
+
+        <nav class="tabs" aria-label="Vistas del análisis">
+          <button class="tab active" data-tab="video">Video</button>
+          <button class="tab" data-tab="heatmap">Mapa de calor</button>
+          <button class="tab" data-tab="tactical">Mapa táctico</button>
+          <button class="tab" data-tab="narrative">Narrativa</button>
+        </nav>
+
+        <section class="tab-panel active" id="panel-video">
+          <div class="video-layout">
+            <div class="video-stage">
+              <video id="analysis-video" controls playsinline></video>
+            </div>
+            <aside class="match-summary">
+              <h2>Presencia visual</h2>
+              <div class="share-row">
+                <span>Equipo rojo</span>
+                <strong id="red-share">0%</strong>
+              </div>
+              <div class="share-bar"><span id="red-bar" class="red-bar"></span></div>
+              <div class="share-row">
+                <span>Equipo azul</span>
+                <strong id="blue-share">0%</strong>
+              </div>
+              <div class="share-bar"><span id="blue-bar" class="blue-bar"></span></div>
+              <div class="summary-note">
+                La presencia visual cuenta detecciones por muestra. No representa posesión oficial.
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="tab-panel" id="panel-heatmap">
+          <div class="visual-panel">
+            <div>
+              <p class="eyebrow">ACTIVIDAD ACUMULADA</p>
+              <h2>Mapa de calor por equipo</h2>
+              <p>Las zonas intensas indican dónde aparecieron con mayor frecuencia los robots.</p>
+            </div>
+            <img id="heatmap-image" alt="Mapa de calor de los equipos">
+          </div>
+        </section>
+
+        <section class="tab-panel" id="panel-tactical">
+          <div class="visual-panel">
+            <div>
+              <p class="eyebrow">DISTRIBUCIÓN ESPACIAL</p>
+              <h2>Mapa táctico aproximado</h2>
+              <p>Posiciones normalizadas usando el punto inferior de cada robot. La calibración por homografía será el siguiente nivel de precisión.</p>
+            </div>
+            <canvas id="tactical-canvas" width="960" height="540"></canvas>
+          </div>
+        </section>
+
+        <section class="tab-panel" id="panel-narrative">
+          <div class="narrative-layout">
+            <div>
+              <p class="eyebrow">RESUMEN AUTOMÁTICO</p>
+              <h2>Lectura del partido</h2>
+            </div>
+            <ol id="narrative-list"></ol>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
