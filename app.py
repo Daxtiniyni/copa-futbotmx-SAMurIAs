@@ -19,9 +19,10 @@ ROOT = Path(__file__).resolve().parent
 OUTPUT_DIR = ROOT / "outputs" / "sam3"
 UPLOAD_DIR = ROOT / "data" / "uploads"
 HEATMAP_DIR = OUTPUT_DIR / "heatmaps"
+CALIBRATION_DIR = ROOT / "data" / "calibrations"
 ALLOWED_VIDEO_EXTENSIONS = {".mp4", ".mov", ".m4v", ".avi", ".webm"}
 
-for directory in (OUTPUT_DIR, UPLOAD_DIR, HEATMAP_DIR):
+for directory in (OUTPUT_DIR, UPLOAD_DIR, HEATMAP_DIR, CALIBRATION_DIR):
     directory.mkdir(parents=True, exist_ok=True)
 
 app = Flask(__name__)
@@ -37,13 +38,20 @@ def slugify(value: str) -> str:
 
 
 def read_records(path: Path) -> list[dict]:
+    return read_analysis_payload(path)["frames"]
+
+
+def read_analysis_payload(path: Path) -> dict:
     try:
         payload = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError):
-        return []
+        return {"metadata": {}, "frames": []}
     if isinstance(payload, dict):
-        return payload.get("frames", [])
-    return payload if isinstance(payload, list) else []
+        return {
+            "metadata": payload.get("metadata", {}),
+            "frames": payload.get("frames", []),
+        }
+    return {"metadata": {}, "frames": payload if isinstance(payload, list) else []}
 
 
 def analysis_files(analysis_id: str) -> tuple[Path, Path]:
@@ -85,12 +93,25 @@ def discover_analyses() -> list[dict]:
         video_path = OUTPUT_DIR / f"{analysis_id}.mp4"
         if not video_path.exists():
             continue
-        records = read_records(json_path)
-        analyses.append(build_summary(analysis_id, records, video_path))
+        payload = read_analysis_payload(json_path)
+        analyses.append(
+            build_summary(
+                analysis_id,
+                payload["frames"],
+                video_path,
+                payload["metadata"],
+            )
+        )
     return analyses
 
 
-def build_summary(analysis_id: str, records: list[dict], video_path: Path) -> dict:
+def build_summary(
+    analysis_id: str,
+    records: list[dict],
+    video_path: Path,
+    metadata: dict | None = None,
+) -> dict:
+    metadata = metadata or {}
     red = 0
     blue = 0
     balls = 0
@@ -98,6 +119,9 @@ def build_summary(analysis_id: str, records: list[dict], video_path: Path) -> di
     max_robots = 0
     timeline = []
     positions = {"red_team": [], "blue_team": [], "ball": []}
+    trajectories: dict[str, dict] = {}
+    calibrated = bool(metadata.get("homography"))
+    field_size = metadata.get("field_size", [900, 600])
 
     max_x = 1.0
     max_y = 1.0
@@ -109,12 +133,34 @@ def build_summary(analysis_id: str, records: list[dict], video_path: Path) -> di
         for robot in robots:
             team = robot.get("team", "blue_team")
             box = robot.get("box", [0, 0, 0, 0])
-            if len(box) == 4:
+            field_position = robot.get("field_position")
+            image_position = robot.get("image_position")
+            if calibrated and field_position:
+                point = [float(field_position[0]), float(field_position[1])]
+                positions.setdefault(team, []).append(point)
+                max_x = max(max_x, float(field_size[0]))
+                max_y = max(max_y, float(field_size[1]))
+            elif image_position:
+                point = [float(image_position[0]), float(image_position[1])]
+                positions.setdefault(team, []).append(point)
+                max_x = max(max_x, point[0])
+                max_y = max(max_y, point[1])
+            elif len(box) == 4:
                 x = (float(box[0]) + float(box[2])) / 2
                 y = float(box[3])
-                positions.setdefault(team, []).append([x, y])
+                point = [x, y]
+                positions.setdefault(team, []).append(point)
                 max_x = max(max_x, float(box[2]))
                 max_y = max(max_y, float(box[3]))
+            else:
+                point = None
+            track_id = robot.get("track_id")
+            if track_id is not None and point is not None:
+                key = f"{team}:{track_id}"
+                trajectories.setdefault(
+                    key,
+                    {"track_id": track_id, "team": team, "points": []},
+                )["points"].append(point)
             if team == "red_team":
                 red += 1
                 frame_red += 1
@@ -123,12 +169,34 @@ def build_summary(analysis_id: str, records: list[dict], video_path: Path) -> di
                 frame_blue += 1
         for ball in balls_in_frame:
             box = ball.get("box", [0, 0, 0, 0])
-            if len(box) == 4:
+            field_position = ball.get("field_position")
+            image_position = ball.get("image_position")
+            if calibrated and field_position:
+                point = [float(field_position[0]), float(field_position[1])]
+                positions["ball"].append(point)
+                max_x = max(max_x, float(field_size[0]))
+                max_y = max(max_y, float(field_size[1]))
+            elif image_position:
+                point = [float(image_position[0]), float(image_position[1])]
+                positions["ball"].append(point)
+                max_x = max(max_x, point[0])
+                max_y = max(max_y, point[1])
+            elif len(box) == 4:
                 x = (float(box[0]) + float(box[2])) / 2
                 y = (float(box[1]) + float(box[3])) / 2
-                positions["ball"].append([x, y])
+                point = [x, y]
+                positions["ball"].append(point)
                 max_x = max(max_x, float(box[2]))
                 max_y = max(max_y, float(box[3]))
+            else:
+                point = None
+            track_id = ball.get("track_id")
+            if track_id is not None and point is not None:
+                key = f"ball:{track_id}"
+                trajectories.setdefault(
+                    key,
+                    {"track_id": track_id, "team": "ball", "points": []},
+                )["points"].append(point)
         balls += len(balls_in_frame)
         if balls_in_frame:
             ball_frames += 1
@@ -147,7 +215,16 @@ def build_summary(analysis_id: str, records: list[dict], video_path: Path) -> di
     total_robot_observations = red + blue
     red_share = round(red * 100 / total_robot_observations) if total_robot_observations else 0
     blue_share = 100 - red_share if total_robot_observations else 0
-    narrative = build_narrative(frame_count, duration, red, blue, balls, max_robots)
+    narrative = build_narrative(
+        frame_count,
+        duration,
+        red,
+        blue,
+        ball_frames,
+        max_robots,
+        len([track for track in trajectories.values() if track["team"] != "ball"]),
+        calibrated,
+    )
     playable_video = browser_video_path(analysis_id)
     if not playable_video.exists():
         playable_video = video_path
@@ -169,7 +246,12 @@ def build_summary(analysis_id: str, records: list[dict], video_path: Path) -> di
         "blue_share": blue_share,
         "timeline": timeline,
         "positions": positions,
-        "source_size": [max_x, max_y],
+        "source_size": field_size if calibrated else metadata.get("source_size", [max_x, max_y]),
+        "trajectories": list(trajectories.values()),
+        "tracking": bool(metadata.get("tracking")) or bool(trajectories),
+        "calibrated": calibrated,
+        "field_size": field_size,
+        "calibration_points": metadata.get("calibration_points"),
         "narrative": narrative,
     }
 
@@ -179,31 +261,47 @@ def build_narrative(
     duration: float,
     red: int,
     blue: int,
-    balls: int,
+    ball_frames: int,
     max_robots: int,
+    track_count: int,
+    calibrated: bool,
 ) -> list[str]:
     if not frame_count:
         return ["El análisis aún no contiene detecciones suficientes."]
     dominant = "rojo" if red > blue else "azul" if blue > red else "equilibrado"
-    ball_rate = balls / frame_count
+    ball_rate = ball_frames / frame_count
     return [
         f"Se analizaron {frame_count} muestras a lo largo de {duration:.1f} segundos.",
         f"El equipo {dominant} tuvo mayor presencia visual en los frames procesados."
         if dominant != "equilibrado"
         else "La presencia visual de ambos equipos fue equilibrada.",
         f"El máximo observado fue de {max_robots} robots simultáneos.",
+        f"Se construyeron {track_count} trayectorias de robots con identidad temporal."
+        if track_count
+        else "Este análisis anterior no contiene identidades temporales.",
         f"El balón apareció en {ball_rate:.0%} de las muestras analizadas.",
-        "Estas métricas describen presencia visual; no equivalen todavía a posesión deportiva.",
+        "Las posiciones fueron proyectadas mediante homografía al campo canónico."
+        if calibrated
+        else "Las posiciones son aproximadas porque el análisis no tiene calibración homográfica.",
     ]
 
 
-def create_heatmap(analysis_id: str, records: list[dict]) -> Path:
+def create_heatmap(
+    analysis_id: str,
+    records: list[dict],
+    metadata: dict | None = None,
+) -> Path:
     output_path = HEATMAP_DIR / f"{analysis_id}.png"
     json_path, _ = analysis_files(analysis_id)
     if output_path.exists() and output_path.stat().st_mtime >= json_path.stat().st_mtime:
         return output_path
 
-    summary = build_summary(analysis_id, records, OUTPUT_DIR / f"{analysis_id}.mp4")
+    summary = build_summary(
+        analysis_id,
+        records,
+        OUTPUT_DIR / f"{analysis_id}.mp4",
+        metadata,
+    )
     source_w, source_h = summary["source_size"]
     width, height = 960, 540
     field = np.full((height, width, 3), (34, 104, 54), dtype=np.uint8)
@@ -250,6 +348,7 @@ def run_analysis_job(
     analysis_id: str,
     sample_fps: float,
     max_width: int,
+    calibration_path: Path | None,
 ) -> None:
     output_json, output_video = analysis_files(analysis_id)
     command = [
@@ -268,6 +367,8 @@ def run_analysis_job(
         "--json-out",
         str(output_json),
     ]
+    if calibration_path is not None:
+        command.extend(["--calibration", str(calibration_path)])
     update_job(job_id, status="running", message="Cargando SAM 3 y preparando el video")
     try:
         process = subprocess.Popen(
@@ -324,7 +425,15 @@ def analysis_detail(analysis_id: str):
     json_path, video_path = analysis_files(analysis_id)
     if not json_path.exists() or not video_path.exists():
         abort(404)
-    return jsonify(build_summary(analysis_id, read_records(json_path), video_path))
+    payload = read_analysis_payload(json_path)
+    return jsonify(
+        build_summary(
+            analysis_id,
+            payload["frames"],
+            video_path,
+            payload["metadata"],
+        )
+    )
 
 
 @app.get("/api/analyses/<analysis_id>/heatmap")
@@ -332,7 +441,11 @@ def heatmap(analysis_id: str):
     json_path, _ = analysis_files(analysis_id)
     if not json_path.exists():
         abort(404)
-    return send_file(create_heatmap(analysis_id, read_records(json_path)), mimetype="image/png")
+    payload = read_analysis_payload(json_path)
+    return send_file(
+        create_heatmap(analysis_id, payload["frames"], payload["metadata"]),
+        mimetype="image/png",
+    )
 
 
 @app.get("/media/<path:filename>")
@@ -356,13 +469,43 @@ def analyze_video():
     analysis_id = slugify(requested_name)
     stored_name = f"{analysis_id}-{uuid.uuid4().hex[:6]}{suffix}"
     source_path = UPLOAD_DIR / secure_filename(stored_name)
-    upload.save(source_path)
+    points = None
+    raw_calibration = request.form.get("calibration_points", "").strip()
+    if raw_calibration:
+        try:
+            points = json.loads(raw_calibration)
+            if not isinstance(points, list) or len(points) != 4:
+                raise ValueError
+            if any(
+                not isinstance(point, list)
+                or len(point) != 2
+                or any(
+                    not isinstance(value, (int, float)) or not 0 <= value <= 1
+                    for value in point
+                )
+                for point in points
+            ):
+                raise ValueError
+            contour = np.asarray(points, dtype=np.float32)
+            if not cv2.isContourConvex(contour) or cv2.contourArea(contour) < 0.01:
+                raise ValueError
+        except (json.JSONDecodeError, ValueError, TypeError):
+            return jsonify({"error": "La calibración de cancha no es válida"}), 400
 
     try:
         sample_fps = min(max(float(request.form.get("sample_fps", 1)), 0.2), 5)
         max_width = min(max(int(request.form.get("max_width", 960)), 480), 1920)
     except ValueError:
         return jsonify({"error": "Parámetros de análisis inválidos"}), 400
+
+    upload.save(source_path)
+    calibration_path = None
+    if points is not None:
+        calibration_path = CALIBRATION_DIR / f"{analysis_id}.json"
+        calibration_path.write_text(
+            json.dumps({"points": points, "normalized": True}, indent=2),
+            encoding="utf-8",
+        )
 
     job_id = uuid.uuid4().hex
     with jobs_lock:
@@ -374,7 +517,14 @@ def analyze_video():
         }
     threading.Thread(
         target=run_analysis_job,
-        args=(job_id, source_path, analysis_id, sample_fps, max_width),
+        args=(
+            job_id,
+            source_path,
+            analysis_id,
+            sample_fps,
+            max_width,
+            calibration_path,
+        ),
         daemon=True,
     ).start()
     return jsonify(jobs[job_id]), 202

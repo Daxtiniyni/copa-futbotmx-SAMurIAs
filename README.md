@@ -21,7 +21,9 @@ El prototipo permite:
 4. Clasificar visualmente robots entre equipo rojo y equipo azul.
 5. Generar videos anotados y registros JSON.
 6. Explorar resultados desde una plataforma web.
-7. Generar mapas de calor, mapas tácticos aproximados y narrativa automática.
+7. Mantener identidades temporales y dibujar trayectorias de robots y balón.
+8. Calibrar una cancha fija mediante homografía.
+9. Generar mapas de calor sobre un campo canónico y narrativa automática.
 
 ## Requisitos
 
@@ -74,6 +76,26 @@ python scripts/segment_robot_soccer_video.py partido.mp4 \
   --json-out outputs/sam3/partido_segmentado.json
 ```
 
+Procesar con homografía:
+
+```bash
+python scripts/segment_robot_soccer_video.py partido.mp4 \
+  --calibration data/calibrations/partido.json \
+  --out outputs/sam3/partido_segmentado.mp4 \
+  --json-out outputs/sam3/partido_segmentado.json
+```
+
+El archivo de calibración contiene cuatro puntos normalizados entre `0` y `1`,
+en orden superior izquierda, superior derecha, inferior derecha e inferior
+izquierda:
+
+```json
+{
+  "points": [[0.1, 0.2], [0.9, 0.2], [0.95, 0.9], [0.05, 0.9]],
+  "normalized": true
+}
+```
+
 ## Plataforma web
 
 Iniciar el servidor:
@@ -96,7 +118,9 @@ La plataforma permite:
 - Reproducir el resultado segmentado.
 - Consultar métricas de presencia visual.
 - Revisar mapas de calor por equipo.
-- Explorar posiciones normalizadas en un mapa táctico.
+- Calibrar una cancha de cámara fija seleccionando sus cuatro esquinas.
+- Explorar trayectorias persistentes en un mapa táctico de `900 × 600`.
+- Generar mapas de calor con coordenadas proyectadas por homografía.
 - Leer una narrativa automática del análisis.
 
 Los resultados se almacenan localmente en `outputs/sam3/`. Los videos de entrada,
@@ -114,9 +138,11 @@ compartidos para la competencia, principalmente:
 - NB13: integración nativa de SAM 3 desde Hugging Face.
 
 La implementación de este repositorio es propia. Los notebooks del curso no se
-redistribuyen y permanecen fuera del historial Git. La calibración exacta por
-homografía todavía está planificada; el mapa táctico actual usa normalización de
-coordenadas de imagen.
+redistribuyen y permanecen fuera del historial Git.
+
+La homografía implementada supone una cámara fija durante todo el video. Si la
+cámara se desplaza, cambia el zoom o gira, se requiere recalibración por tramo o
+estimación dinámica de la cancha.
 
 ## Colores de visualización
 

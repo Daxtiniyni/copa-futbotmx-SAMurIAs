@@ -35,8 +35,14 @@
             <span id="file-label">Ningún archivo seleccionado</span>
           </label>
           <input id="video-input" name="video" type="file" accept="video/*" hidden required>
+          <input id="calibration-points" name="calibration_points" type="hidden">
           <label class="field-label" for="analysis-name">Nombre del análisis</label>
           <input id="analysis-name" name="name" type="text" placeholder="Partido semifinal">
+          <button id="calibrate-button" class="secondary-button" type="button" disabled>
+            <span>⌖</span>
+            Calibrar cancha
+          </button>
+          <p id="calibration-status" class="calibration-status">Sin calibración: el mapa será aproximado.</p>
           <div class="form-row">
             <label>
               <span>Frecuencia</span>
@@ -107,8 +113,8 @@
             <strong id="metric-duration">0 s</strong>
           </article>
           <article>
-            <span>Máx. robots</span>
-            <strong id="metric-robots">0</strong>
+            <span>Tracks identificados</span>
+            <strong id="metric-tracks">0</strong>
           </article>
           <article>
             <span>Balón visible</span>
@@ -161,9 +167,9 @@
         <section class="tab-panel" id="panel-tactical">
           <div class="visual-panel">
             <div>
-              <p class="eyebrow">DISTRIBUCIÓN ESPACIAL</p>
-              <h2>Mapa táctico aproximado</h2>
-              <p>Posiciones normalizadas usando el punto inferior de cada robot. La calibración por homografía será el siguiente nivel de precisión.</p>
+              <p class="eyebrow" id="tactical-eyebrow">DISTRIBUCIÓN ESPACIAL</p>
+              <h2 id="tactical-title">Trayectorias por robot</h2>
+              <p id="tactical-description">Cada línea corresponde a un ID persistente. Con calibración, las posiciones se proyectan mediante homografía.</p>
             </div>
             <canvas id="tactical-canvas" width="960" height="540"></canvas>
           </div>
@@ -181,6 +187,28 @@
       </div>
     </main>
   </div>
+
+  <dialog id="calibration-dialog" class="calibration-dialog">
+    <form method="dialog" class="calibration-header">
+      <div>
+        <p class="eyebrow">HOMOGRAFÍA</p>
+        <h2>Selecciona las cuatro esquinas</h2>
+        <p>Para cámara fija. Orden: superior izquierda, superior derecha, inferior derecha e inferior izquierda.</p>
+      </div>
+      <button class="icon-button" value="cancel" aria-label="Cerrar">×</button>
+    </form>
+    <div class="calibration-stage">
+      <video id="calibration-video" muted playsinline></video>
+      <canvas id="calibration-canvas"></canvas>
+    </div>
+    <div class="calibration-footer">
+      <span id="calibration-progress">0 de 4 puntos</span>
+      <div>
+        <button id="reset-calibration" class="secondary-button" type="button">Reiniciar</button>
+        <button id="save-calibration" class="primary-button compact" type="button" disabled>Usar calibración</button>
+      </div>
+    </div>
+  </dialog>
 
   <script src="/static/app.js"></script>
 </body>
