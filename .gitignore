@@ -5,9 +5,14 @@ __pycache__/
 
 # Third-party source and downloaded model weights
 third_party/
+futbot-notebooks/
+futbot-notebooks.zip
 *.pt
 *.pth
 *.ckpt
+
+# Contest reference documents
+Convocatoria_*.pdf
 
 # Private registration documents
 CURP*.pdf
