@@ -1,0 +1,33 @@
+.DS_Store
+.venv*/
+__pycache__/
+*.py[cod]
+
+# Third-party source and downloaded model weights
+third_party/
+*.pt
+*.pth
+*.ckpt
+
+# Private registration documents
+CURP*.pdf
+PASAPORTE*.pdf
+*CURP*PASAPORTE*.pdf
+
+# Local source media
+*.mp4
+*.mov
+*.avi
+*.m4v
+*.webm
+1.webp
+2.webp
+
+# Generated artifacts (selected samples may be force-added later)
+outputs/
+
+# Local environment and editor files
+.env
+.env.*
+.idea/
+.vscode/

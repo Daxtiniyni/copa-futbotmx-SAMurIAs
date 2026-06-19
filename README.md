@@ -1,0 +1,89 @@
+# SAMurIAs
+
+Proyecto de visión por computadora para la Copa FutBotMX.
+
+SAMurIAs utiliza SAM 3 y SAM 3.1 para detectar, segmentar y analizar elementos
+de partidos de fútbol robótico:
+
+- Robots de ambos equipos.
+- Balón.
+- Cancha.
+- Resultados visuales con máscaras de color.
+- Exportación de detecciones y métricas en JSON.
+
+## Estado actual
+
+El prototipo permite:
+
+1. Segmentar imágenes mediante prompts de texto.
+2. Identificar robots y balón.
+3. Procesar videos de fútbol robótico.
+4. Clasificar visualmente robots entre equipo rojo y equipo azul.
+5. Generar videos anotados y registros JSON.
+
+## Requisitos
+
+- Python 3.12 o superior.
+- PyTorch 2.7 o superior.
+- Acceso autorizado a `facebook/sam3` y `facebook/sam3.1` en Hugging Face.
+- GPU NVIDIA con CUDA recomendada para video.
+
+El prototipo también puede ejecutarse en CPU sobre macOS, aunque el
+procesamiento es considerablemente más lento.
+
+## Instalación
+
+```bash
+python3.12 -m venv .venv-sam3
+source .venv-sam3/bin/activate
+pip install torch torchvision
+git clone https://github.com/facebookresearch/sam3.git third_party/sam3
+pip install -e third_party/sam3
+pip install numpy==1.26.4 pillow matplotlib opencv-python einops pycocotools psutil
+hf auth login
+```
+
+SAM 3 se distribuye bajo su propia licencia. Consulta el repositorio oficial
+antes de utilizar o redistribuir modelos y pesos.
+
+## Pruebas
+
+Validar la instalación:
+
+```bash
+python scripts/check_sam31_install.py --with-weights
+```
+
+Segmentar una imagen:
+
+```bash
+python scripts/run_sam3_image_prompt.py imagen.jpg \
+  --prompt "robot" \
+  --out outputs/sam3/robot.png
+```
+
+Procesar un video:
+
+```bash
+python scripts/segment_robot_soccer_video.py partido.mp4 \
+  --seconds 60 \
+  --sample-fps 1 \
+  --out outputs/sam3/partido_segmentado.mp4 \
+  --json-out outputs/sam3/partido_segmentado.json
+```
+
+## Colores de visualización
+
+- Equipo rojo: rojo.
+- Equipo azul: azul.
+- Balón: amarillo.
+- Cancha: verde.
+
+## Equipo
+
+SAMurIAs.
+
+## Licencia
+
+El código propio del proyecto se publica bajo la licencia MIT. Las dependencias,
+modelos y pesos de terceros mantienen sus licencias originales.
