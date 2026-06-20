@@ -24,6 +24,7 @@ PASAPORTE*.pdf
 *.webm
 *.wav
 *.mp3
+!demo/V1_final_narrated.mp4
 
 # Model checkpoints. The competition checkpoint in models/ is versioned.
 *.pt
