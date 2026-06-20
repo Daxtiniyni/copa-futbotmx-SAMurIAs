@@ -1,6 +1,10 @@
 # SAMurIAs
 
-Proyecto de visión por computadora para la Copa FutBotMX.
+Pipeline de visión por computadora desarrollado por el equipo **SAMurIAs** para
+la **Copa FutBotMX 2026**.
+
+Repositorio oficial de entrega:
+[Daxtiniyni/copa-futbotmx-SAMurIAs](https://github.com/Daxtiniyni/copa-futbotmx-SAMurIAs).
 
 SAMurIAs utiliza SAM 3 y SAM 3.1 para detectar, segmentar y analizar elementos
 de partidos de fútbol robótico:
