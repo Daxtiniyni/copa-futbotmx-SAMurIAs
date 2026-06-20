@@ -1,0 +1,5654 @@
+{
+  "source_coco": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\manual_coco\\result.json",
+  "images_dir": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images",
+  "model": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\models\\sam3.pt",
+  "device": "0",
+  "categories": [
+    {
+      "id": 0,
+      "name": "ball"
+    },
+    {
+      "id": 1,
+      "name": "goal"
+    },
+    {
+      "id": 2,
+      "name": "robot"
+    }
+  ],
+  "images": [
+    {
+      "image_id": 0,
+      "file_name": "27099683-futbot_000052.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000052.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\27099683-futbot_000052.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\27099683-futbot_000052.png",
+      "instances": [
+        {
+          "ann_id": 0,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            561.1852527188258,
+            945.2044254991098,
+            30.257674639178546,
+            32.26580673309585
+          ],
+          "bbox_xyxy": [
+            561.1852527188258,
+            945.2044254991098,
+            591.4429273580043,
+            977.4702322322056
+          ],
+          "area": 875,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\27099683-futbot_000052\\000000_ball.png"
+        },
+        {
+          "ann_id": 1,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            808.0308880308879,
+            301.46718146718143,
+            170.5019305019306,
+            217.45173745173736
+          ],
+          "bbox_xyxy": [
+            808.0308880308879,
+            301.46718146718143,
+            978.5328185328185,
+            518.9189189189187
+          ],
+          "area": 21480,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\27099683-futbot_000052\\000001_robot.png"
+        },
+        {
+          "ann_id": 2,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            56.83397683397684,
+            637.5289575289576,
+            172.97297297297297,
+            148.2625482625483
+          ],
+          "bbox_xyxy": [
+            56.83397683397684,
+            637.5289575289576,
+            229.8069498069498,
+            785.7915057915059
+          ],
+          "area": 14712,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\27099683-futbot_000052\\000002_robot.png"
+        },
+        {
+          "ann_id": 3,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            454.67181467181456,
+            98.84169884169879,
+            442.3166023166029,
+            150.7335907335908
+          ],
+          "bbox_xyxy": [
+            454.67181467181456,
+            98.84169884169879,
+            896.9884169884174,
+            249.5752895752896
+          ],
+          "area": 37700,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\27099683-futbot_000052\\000003_goal.png"
+        },
+        {
+          "ann_id": 4,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            283.5046889820876,
+            1611.802214823836,
+            434.67480160390863,
+            296.73549263015883
+          ],
+          "bbox_xyxy": [
+            283.5046889820876,
+            1611.802214823836,
+            718.1794905859963,
+            1908.537707453995
+          ],
+          "area": 35805,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\27099683-futbot_000052\\000004_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 1,
+      "file_name": "83934dbc-futbot_000053.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\test\\futbot_000053.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\83934dbc-futbot_000053.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\83934dbc-futbot_000053.png",
+      "instances": [
+        {
+          "ann_id": 5,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            561.1165370915768,
+            948.193762835427,
+            27.94612820038219,
+            30.471380748609405
+          ],
+          "bbox_xyxy": [
+            561.1165370915768,
+            948.193762835427,
+            589.062665291959,
+            978.6651435840364
+          ],
+          "area": 838,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\83934dbc-futbot_000053\\000005_ball.png"
+        },
+        {
+          "ann_id": 6,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            81.92879732329823,
+            643.1709237058047,
+            156.0057553094009,
+            119.95782350004382
+          ],
+          "bbox_xyxy": [
+            81.92879732329823,
+            643.1709237058047,
+            237.93455263269914,
+            763.1287472058485
+          ],
+          "area": 13895,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\83934dbc-futbot_000053\\000006_goal.png"
+        },
+        {
+          "ann_id": 7,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            457.9814169444976,
+            114.81076843512197,
+            442.84153539261337,
+            128.68899319101587
+          ],
+          "bbox_xyxy": [
+            457.9814169444976,
+            114.81076843512197,
+            900.822952337111,
+            243.49976162613785
+          ],
+          "area": 37736,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\83934dbc-futbot_000053\\000007_goal.png"
+        },
+        {
+          "ann_id": 8,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            283.3414876357646,
+            1613.1754905741936,
+            428.8797977010299,
+            277.2208560282303
+          ],
+          "bbox_xyxy": [
+            283.3414876357646,
+            1613.1754905741936,
+            712.2212853367945,
+            1890.3963466024238
+          ],
+          "area": 35678,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\83934dbc-futbot_000053\\000008_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 2,
+      "file_name": "d03291cf-futbot_000054.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000054.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\d03291cf-futbot_000054.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\d03291cf-futbot_000054.png",
+      "instances": [
+        {
+          "ann_id": 9,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            563.5293424330434,
+            948.3637777136582,
+            26.473085557450467,
+            27.71401144295596
+          ],
+          "bbox_xyxy": [
+            563.5293424330434,
+            948.3637777136582,
+            590.0024279904939,
+            976.0777891566142
+          ],
+          "area": 756,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\d03291cf-futbot_000054\\000009_ball.png"
+        },
+        {
+          "ann_id": 10,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            168.23269783006197,
+            656.3800726154925,
+            151.96031801893628,
+            129.41427676983582
+          ],
+          "bbox_xyxy": [
+            168.23269783006197,
+            656.3800726154925,
+            320.19301584899824,
+            785.7943493853284
+          ],
+          "area": 14176,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\d03291cf-futbot_000054\\000010_robot.png"
+        },
+        {
+          "ann_id": 11,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            460.95012456041644,
+            128.57685238058366,
+            438.0373728396639,
+            119.17193231667325
+          ],
+          "bbox_xyxy": [
+            460.95012456041644,
+            128.57685238058366,
+            898.9874974000803,
+            247.7487846972569
+          ],
+          "area": 37729,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\d03291cf-futbot_000054\\000011_goal.png"
+        },
+        {
+          "ann_id": 12,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            293.87409139343157,
+            1608.1651141373661,
+            425.7953800185301,
+            287.06558375061667
+          ],
+          "bbox_xyxy": [
+            293.87409139343157,
+            1608.1651141373661,
+            719.6694714119617,
+            1895.2306978879828
+          ],
+          "area": 35622,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\d03291cf-futbot_000054\\000012_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 3,
+      "file_name": "57175b27-futbot_000055.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000055.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\57175b27-futbot_000055.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\57175b27-futbot_000055.png",
+      "instances": [
+        {
+          "ann_id": 13,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            564.0364192347995,
+            947.3415070263378,
+            27.689557697079312,
+            29.238340324863447
+          ],
+          "bbox_xyxy": [
+            564.0364192347995,
+            947.3415070263378,
+            591.7259769318788,
+            976.5798473512012
+          ],
+          "area": 798,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\57175b27-futbot_000055\\000013_robot.png"
+        },
+        {
+          "ann_id": 14,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            87.37736322921837,
+            639.5450909364528,
+            151.93952605969642,
+            121.84287872518776
+          ],
+          "bbox_xyxy": [
+            87.37736322921837,
+            639.5450909364528,
+            239.3168892889148,
+            761.3879696616406
+          ],
+          "area": 13908,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\57175b27-futbot_000055\\000014_robot.png"
+        },
+        {
+          "ann_id": 15,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            463.5854549105754,
+            127.41665645408939,
+            425.7219308445807,
+            122.8137383166236
+          ],
+          "bbox_xyxy": [
+            463.5854549105754,
+            127.41665645408939,
+            889.307385755156,
+            250.230394770713
+          ],
+          "area": 37707,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\57175b27-futbot_000055\\000015_goal.png"
+        },
+        {
+          "ann_id": 16,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            291.6903030137101,
+            1633.2585044898756,
+            425.77037397959174,
+            254.43177785925508
+          ],
+          "bbox_xyxy": [
+            291.6903030137101,
+            1633.2585044898756,
+            717.4606769933018,
+            1887.6902823491307
+          ],
+          "area": 35571,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\57175b27-futbot_000055\\000016_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 4,
+      "file_name": "818eebb3-futbot_000056.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000056.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\818eebb3-futbot_000056.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\818eebb3-futbot_000056.png",
+      "instances": [
+        {
+          "ann_id": 17,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            563.8048512676684,
+            944.5046097996986,
+            28.40341471268108,
+            33.36711825470288
+          ],
+          "bbox_xyxy": [
+            563.8048512676684,
+            944.5046097996986,
+            592.2082659803494,
+            977.8717280544015
+          ],
+          "area": 878,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\818eebb3-futbot_000056\\000017_ball.png"
+        },
+        {
+          "ann_id": 18,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            69.44180704722895,
+            610.5546924624202,
+            157.8222887437024,
+            121.52316233265202
+          ],
+          "bbox_xyxy": [
+            69.44180704722895,
+            610.5546924624202,
+            227.26409579093132,
+            732.0778547950722
+          ],
+          "area": 14390,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\818eebb3-futbot_000056\\000018_robot.png"
+        },
+        {
+          "ann_id": 19,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            463.90930462892766,
+            128.89675280680143,
+            431.7302221350321,
+            113.57227465173797
+          ],
+          "bbox_xyxy": [
+            463.90930462892766,
+            128.89675280680143,
+            895.6395267639598,
+            242.46902745853941
+          ],
+          "area": 37764,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\818eebb3-futbot_000056\\000019_goal.png"
+        },
+        {
+          "ann_id": 20,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            295.92726967015415,
+            1610.977177288615,
+            423.06517351046415,
+            269.8515192613355
+          ],
+          "bbox_xyxy": [
+            295.92726967015415,
+            1610.977177288615,
+            718.9924431806182,
+            1880.8286965499506
+          ],
+          "area": 35338,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\818eebb3-futbot_000056\\000020_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 5,
+      "file_name": "2f2a6478-futbot_000057.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\val\\futbot_000057.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\2f2a6478-futbot_000057.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\2f2a6478-futbot_000057.png",
+      "instances": [
+        {
+          "ann_id": 21,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            561.423549778702,
+            943.3620613296614,
+            33.877276674299786,
+            33.69803182417127
+          ],
+          "bbox_xyxy": [
+            561.423549778702,
+            943.3620613296614,
+            595.3008264530017,
+            977.0600931538327
+          ],
+          "area": 944,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\2f2a6478-futbot_000057\\000021_ball.png"
+        },
+        {
+          "ann_id": 22,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            234.2416016241935,
+            652.1879474412137,
+            146.84490637355148,
+            126.46429659216918
+          ],
+          "bbox_xyxy": [
+            234.2416016241935,
+            652.1879474412137,
+            381.086507997745,
+            778.6522440333829
+          ],
+          "area": 13408,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\2f2a6478-futbot_000057\\000022_goal.png"
+        },
+        {
+          "ann_id": 23,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            456.3379902674655,
+            126.47273102913974,
+            450.986313880338,
+            115.4901220945014
+          ],
+          "bbox_xyxy": [
+            456.3379902674655,
+            126.47273102913974,
+            907.3243041478036,
+            241.96285312364114
+          ],
+          "area": 37961,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\2f2a6478-futbot_000057\\000023_goal.png"
+        },
+        {
+          "ann_id": 24,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            291.4181495077398,
+            1612.5486835404795,
+            430.92416981465607,
+            256.89333239717763
+          ],
+          "bbox_xyxy": [
+            291.4181495077398,
+            1612.5486835404795,
+            722.342319322396,
+            1869.442015937657
+          ],
+          "area": 35472,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\2f2a6478-futbot_000057\\000024_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 6,
+      "file_name": "252e3cc8-futbot_000058.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\val\\futbot_000058.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\252e3cc8-futbot_000058.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\252e3cc8-futbot_000058.png",
+      "instances": [
+        {
+          "ann_id": 25,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            561.7675328468773,
+            945.5192155059957,
+            29.782221252131595,
+            31.436789099472254
+          ],
+          "bbox_xyxy": [
+            561.7675328468773,
+            945.5192155059957,
+            591.549754099009,
+            976.9560046054679
+          ],
+          "area": 856,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\252e3cc8-futbot_000058\\000025_ball.png"
+        },
+        {
+          "ann_id": 26,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            487.89767100750413,
+            774.675035657724,
+            121.39929297785964,
+            123.00723063319273
+          ],
+          "bbox_xyxy": [
+            487.89767100750413,
+            774.675035657724,
+            609.2969639853637,
+            897.6822662909168
+          ],
+          "area": 12223,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\252e3cc8-futbot_000058\\000026_robot.png"
+        },
+        {
+          "ann_id": 27,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            457.60800120644615,
+            117.75060646761155,
+            441.5520273705361,
+            130.0182066737721
+          ],
+          "bbox_xyxy": [
+            457.60800120644615,
+            117.75060646761155,
+            899.1600285769823,
+            247.76881314138365
+          ],
+          "area": 37655,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\252e3cc8-futbot_000058\\000027_goal.png"
+        },
+        {
+          "ann_id": 28,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            290.3878143476041,
+            1611.6296378163793,
+            426.91223497779777,
+            275.23687559099847
+          ],
+          "bbox_xyxy": [
+            290.3878143476041,
+            1611.6296378163793,
+            717.3000493254019,
+            1886.8665134073776
+          ],
+          "area": 35563,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\252e3cc8-futbot_000058\\000028_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 7,
+      "file_name": "36043dd1-futbot_000059.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\test\\futbot_000059.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\36043dd1-futbot_000059.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\36043dd1-futbot_000059.png",
+      "instances": [
+        {
+          "ann_id": 30,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            562.509340761449,
+            945.2873298274102,
+            30.716472987132523,
+            33.78812028584575
+          ],
+          "bbox_xyxy": [
+            562.509340761449,
+            945.2873298274102,
+            593.2258137485816,
+            979.0754501132559
+          ],
+          "area": 903,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\36043dd1-futbot_000059\\000030_ball.png"
+        },
+        {
+          "ann_id": 31,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            474.9673927481212,
+            781.4661405627031,
+            119.79424464981693,
+            125.93753924724342
+          ],
+          "bbox_xyxy": [
+            474.9673927481212,
+            781.4661405627031,
+            594.7616373979381,
+            907.4036798099465
+          ],
+          "area": 12342,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\36043dd1-futbot_000059\\000031_robot.png"
+        },
+        {
+          "ann_id": 32,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            924.8818114149808,
+            389.83110997676323,
+            153.07042371921037,
+            200.16901563281368
+          ],
+          "bbox_xyxy": [
+            924.8818114149808,
+            389.83110997676323,
+            1077.9522351341911,
+            590.0001256095769
+          ],
+          "area": 21197,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\36043dd1-futbot_000059\\000032_robot.png"
+        },
+        {
+          "ann_id": 33,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            462.0869517421838,
+            128.74108958613672,
+            432.59032790211654,
+            118.77036221691247
+          ],
+          "bbox_xyxy": [
+            462.0869517421838,
+            128.74108958613672,
+            894.6772796443004,
+            247.5114518030492
+          ],
+          "area": 37273,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\36043dd1-futbot_000059\\000033_goal.png"
+        },
+        {
+          "ann_id": 34,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            289.06754942395236,
+            1598.851273827944,
+            438.48566585595734,
+            298.6157260040244
+          ],
+          "bbox_xyxy": [
+            289.06754942395236,
+            1598.851273827944,
+            727.5532152799096,
+            1897.4669998319682
+          ],
+          "area": 35664,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\36043dd1-futbot_000059\\000034_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 8,
+      "file_name": "12f4b7b2-futbot_000060.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\val\\futbot_000060.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\12f4b7b2-futbot_000060.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\12f4b7b2-futbot_000060.png",
+      "instances": [
+        {
+          "ann_id": 35,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            557.5044337920858,
+            945.2789530544546,
+            37.25962699622586,
+            30.292379671728305
+          ],
+          "bbox_xyxy": [
+            557.5044337920858,
+            945.2789530544546,
+            594.7640607883117,
+            975.571332726183
+          ],
+          "area": 897,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\12f4b7b2-futbot_000060\\000035_ball.png"
+        },
+        {
+          "ann_id": 36,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            553.5664244347613,
+            798.057987849855,
+            128.13676601141296,
+            112.38472858211193
+          ],
+          "bbox_xyxy": [
+            553.5664244347613,
+            798.057987849855,
+            681.7031904461743,
+            910.4427164319669
+          ],
+          "area": 12212,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\12f4b7b2-futbot_000060\\000036_robot.png"
+        },
+        {
+          "ann_id": 37,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            767.8030258321876,
+            322.3625309926142,
+            143.42514456818543,
+            208.9555985519233
+          ],
+          "bbox_xyxy": [
+            767.8030258321876,
+            322.3625309926142,
+            911.2281704003731,
+            531.3181295445374
+          ],
+          "area": 20626,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\12f4b7b2-futbot_000060\\000037_robot.png"
+        },
+        {
+          "ann_id": 38,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            461.1699581346925,
+            123.91653355129176,
+            437.69397566497287,
+            127.35163698726609
+          ],
+          "bbox_xyxy": [
+            461.1699581346925,
+            123.91653355129176,
+            898.8639337996653,
+            251.26817053855785
+          ],
+          "area": 37854,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\12f4b7b2-futbot_000060\\000038_goal.png"
+        },
+        {
+          "ann_id": 39,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            291.0589489026009,
+            1596.0659373005456,
+            435.8666189028884,
+            314.0862361360104
+          ],
+          "bbox_xyxy": [
+            291.0589489026009,
+            1596.0659373005456,
+            726.9255678054892,
+            1910.152173436556
+          ],
+          "area": 35764,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\12f4b7b2-futbot_000060\\000039_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 9,
+      "file_name": "9de0979a-futbot_000061.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000061.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\9de0979a-futbot_000061.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\9de0979a-futbot_000061.png",
+      "instances": [
+        {
+          "ann_id": 40,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            487.54599234971033,
+            1028.5896784301046,
+            27.024608173230536,
+            30.33374386791119
+          ],
+          "bbox_xyxy": [
+            487.54599234971033,
+            1028.5896784301046,
+            514.5706005229408,
+            1058.9234222980158
+          ],
+          "area": 804,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\9de0979a-futbot_000061\\000040_ball.png"
+        },
+        {
+          "ann_id": 41,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            532.4242542413277,
+            783.4461369056886,
+            130.43984040735137,
+            120.59532415019294
+          ],
+          "bbox_xyxy": [
+            532.4242542413277,
+            783.4461369056886,
+            662.8640946486792,
+            904.0414610558815
+          ],
+          "area": 12425,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\9de0979a-futbot_000061\\000041_robot.png"
+        },
+        {
+          "ann_id": 42,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            821.5814482495869,
+            403.6251665435027,
+            158.33263646930095,
+            189.50693795030304
+          ],
+          "bbox_xyxy": [
+            821.5814482495869,
+            403.6251665435027,
+            979.9140847188878,
+            593.1321044938057
+          ],
+          "area": 19762,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\9de0979a-futbot_000061\\000042_robot.png"
+        },
+        {
+          "ann_id": 43,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            455.3088768935853,
+            122.2360768597193,
+            442.18285521737437,
+            123.05645321448245
+          ],
+          "bbox_xyxy": [
+            455.3088768935853,
+            122.2360768597193,
+            897.4917321109597,
+            245.29253007420175
+          ],
+          "area": 37680,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\9de0979a-futbot_000061\\000043_goal.png"
+        },
+        {
+          "ann_id": 44,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            288.3842207583524,
+            1611.3617208021574,
+            433.8019990759129,
+            278.00513877093
+          ],
+          "bbox_xyxy": [
+            288.3842207583524,
+            1611.3617208021574,
+            722.1862198342653,
+            1889.3668595730874
+          ],
+          "area": 35313,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\9de0979a-futbot_000061\\000044_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 10,
+      "file_name": "8cef8b6f-futbot_000062.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000062.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\8cef8b6f-futbot_000062.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\8cef8b6f-futbot_000062.png",
+      "instances": [
+        {
+          "ann_id": 45,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            401.6951711685173,
+            1146.3847009740318,
+            29.593324756226888,
+            32.62256272339946
+          ],
+          "bbox_xyxy": [
+            401.6951711685173,
+            1146.3847009740318,
+            431.28849592474415,
+            1179.0072636974312
+          ],
+          "area": 854,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\8cef8b6f-futbot_000062\\000045_ball.png"
+        },
+        {
+          "ann_id": 46,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            450.45135778349345,
+            730.3414525049942,
+            129.6667924318259,
+            127.20476472742433
+          ],
+          "bbox_xyxy": [
+            450.45135778349345,
+            730.3414525049942,
+            580.1181502153194,
+            857.5462172324185
+          ],
+          "area": 13126,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\8cef8b6f-futbot_000062\\000046_robot.png"
+        },
+        {
+          "ann_id": 47,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            885.4998113522613,
+            340.11006135731475,
+            152.64571767290954,
+            207.6310030712149
+          ],
+          "bbox_xyxy": [
+            885.4998113522613,
+            340.11006135731475,
+            1038.1455290251708,
+            547.7410644285296
+          ],
+          "area": 21520,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\8cef8b6f-futbot_000062\\000047_robot.png"
+        },
+        {
+          "ann_id": 48,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            457.8104272733273,
+            121.34279400265805,
+            437.88921314002687,
+            124.27377936504108
+          ],
+          "bbox_xyxy": [
+            457.8104272733273,
+            121.34279400265805,
+            895.6996404133542,
+            245.61657336769912
+          ],
+          "area": 37503,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\8cef8b6f-futbot_000062\\000048_goal.png"
+        },
+        {
+          "ann_id": 49,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            292.904233452299,
+            1600.3240322232857,
+            426.2776323124688,
+            279.71859646072846
+          ],
+          "bbox_xyxy": [
+            292.904233452299,
+            1600.3240322232857,
+            719.1818657647678,
+            1880.0426286840143
+          ],
+          "area": 35319,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\8cef8b6f-futbot_000062\\000049_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 11,
+      "file_name": "3068d92c-futbot_000063.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000063.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\3068d92c-futbot_000063.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\3068d92c-futbot_000063.png",
+      "instances": [
+        {
+          "ann_id": 50,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            346.4989554716847,
+            1236.74037728084,
+            29.08068448485876,
+            30.292379671728565
+          ],
+          "bbox_xyxy": [
+            346.4989554716847,
+            1236.74037728084,
+            375.5796399565435,
+            1267.0327569525687
+          ],
+          "area": 820,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\3068d92c-futbot_000063\\000050_ball.png"
+        },
+        {
+          "ann_id": 51,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            448.83603740698373,
+            733.2229958640602,
+            127.70735608725546,
+            127.088918527511
+          ],
+          "bbox_xyxy": [
+            448.83603740698373,
+            733.2229958640602,
+            576.5433934942392,
+            860.3119143915712
+          ],
+          "area": 12966,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\3068d92c-futbot_000063\\000051_robot.png"
+        },
+        {
+          "ann_id": 52,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            457.93510847675634,
+            128.9119177148307,
+            433.45550855792067,
+            128.0467370590265
+          ],
+          "bbox_xyxy": [
+            457.93510847675634,
+            128.9119177148307,
+            891.390617034677,
+            256.95865477385723
+          ],
+          "area": 37683,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\3068d92c-futbot_000063\\000052_goal.png"
+        },
+        {
+          "ann_id": 53,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            299.76493369163734,
+            1613.4608802536052,
+            414.2137968866568,
+            266.95973126673726
+          ],
+          "bbox_xyxy": [
+            299.76493369163734,
+            1613.4608802536052,
+            713.9787305782941,
+            1880.4206115203424
+          ],
+          "area": 35355,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\3068d92c-futbot_000063\\000053_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 12,
+      "file_name": "6a305b18-futbot_000064.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000064.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\6a305b18-futbot_000064.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\6a305b18-futbot_000064.png",
+      "instances": [
+        {
+          "ann_id": 54,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            322.49852266029194,
+            1270.9013197752229,
+            28.403414712681112,
+            31.98831171525079
+          ],
+          "bbox_xyxy": [
+            322.49852266029194,
+            1270.9013197752229,
+            350.90193737297307,
+            1302.8896314904737
+          ],
+          "area": 826,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\6a305b18-futbot_000064\\000054_ball.png"
+        },
+        {
+          "ann_id": 55,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            434.07591159173427,
+            728.6021139226295,
+            128.45219209765438,
+            127.33196949215159
+          ],
+          "bbox_xyxy": [
+            434.07591159173427,
+            728.6021139226295,
+            562.5281036893887,
+            855.9340834147811
+          ],
+          "area": 12653,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\6a305b18-futbot_000064\\000055_robot.png"
+        },
+        {
+          "ann_id": 56,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            459.06146781920165,
+            129.05233126522833,
+            434.5306343867181,
+            121.9735114067981
+          ],
+          "bbox_xyxy": [
+            459.06146781920165,
+            129.05233126522833,
+            893.5921022059197,
+            251.02584267202644
+          ],
+          "area": 37399,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\6a305b18-futbot_000064\\000056_goal.png"
+        },
+        {
+          "ann_id": 57,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            288.6794206423516,
+            1612.1197349014349,
+            427.5498303116507,
+            276.30220668269703
+          ],
+          "bbox_xyxy": [
+            288.6794206423516,
+            1612.1197349014349,
+            716.2292509540023,
+            1888.421941584132
+          ],
+          "area": 35191,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\6a305b18-futbot_000064\\000057_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 13,
+      "file_name": "b172064c-futbot_000065.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000065.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\b172064c-futbot_000065.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\b172064c-futbot_000065.png",
+      "instances": [
+        {
+          "ann_id": 58,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            321.8023230325245,
+            1267.5248758782984,
+            30.333743867911846,
+            31.43678909947239
+          ],
+          "bbox_xyxy": [
+            321.8023230325245,
+            1267.5248758782984,
+            352.13606690043633,
+            1298.9616649777709
+          ],
+          "area": 850,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\b172064c-futbot_000065\\000058_ball.png"
+        },
+        {
+          "ann_id": 59,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            434.58205575095707,
+            729.5701743236409,
+            126.60469316802488,
+            126.60469316802491
+          ],
+          "bbox_xyxy": [
+            434.58205575095707,
+            729.5701743236409,
+            561.186748918982,
+            856.1748674916659
+          ],
+          "area": 12650,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\b172064c-futbot_000065\\000059_robot.png"
+        },
+        {
+          "ann_id": 60,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            456.20412947803766,
+            129.01732383591659,
+            439.04708340811953,
+            113.80828774980053
+          ],
+          "bbox_xyxy": [
+            456.20412947803766,
+            129.01732383591659,
+            895.2512128861572,
+            242.82561158571713
+          ],
+          "area": 37560,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\b172064c-futbot_000065\\000060_goal.png"
+        },
+        {
+          "ann_id": 61,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            291.47945652924426,
+            1620.5944817147993,
+            428.46130664534957,
+            279.7923632100086
+          ],
+          "bbox_xyxy": [
+            291.47945652924426,
+            1620.5944817147993,
+            719.9407631745938,
+            1900.386844924808
+          ],
+          "area": 35225,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\b172064c-futbot_000065\\000061_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 14,
+      "file_name": "cd5351ff-futbot_000066.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\val\\futbot_000066.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\cd5351ff-futbot_000066.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\cd5351ff-futbot_000066.png",
+      "instances": [
+        {
+          "ann_id": 62,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            323.90000241068316,
+            1269.0210951681502,
+            27.257944664522014,
+            31.394364282870587
+          ],
+          "bbox_xyxy": [
+            323.90000241068316,
+            1269.0210951681502,
+            351.1579470752052,
+            1300.4154594510208
+          ],
+          "area": 804,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\cd5351ff-futbot_000066\\000062_ball.png"
+        },
+        {
+          "ann_id": 63,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            439.847937899971,
+            730.4318072795913,
+            123.0564532144825,
+            127.47386435551503
+          ],
+          "bbox_xyxy": [
+            439.847937899971,
+            730.4318072795913,
+            562.9043911144535,
+            857.9056716351064
+          ],
+          "area": 12675,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\cd5351ff-futbot_000066\\000063_robot.png"
+        },
+        {
+          "ann_id": 64,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            959.46778172325,
+            176.36223844720266,
+            119.90115954230986,
+            201.93879501863665
+          ],
+          "bbox_xyxy": [
+            959.46778172325,
+            176.36223844720266,
+            1079.0,
+            378.3010334658393
+          ],
+          "area": 16800,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\cd5351ff-futbot_000066\\000064_robot.png"
+        },
+        {
+          "ann_id": 65,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            452.7276179733555,
+            124.31857068334902,
+            441.74111410327066,
+            121.79433574561604
+          ],
+          "bbox_xyxy": [
+            452.7276179733555,
+            124.31857068334902,
+            894.4687320766261,
+            246.11290642896506
+          ],
+          "area": 37375,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\cd5351ff-futbot_000066\\000065_goal.png"
+        },
+        {
+          "ann_id": 66,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            292.2350781217593,
+            1604.144032267142,
+            428.89167799977434,
+            301.36575780133626
+          ],
+          "bbox_xyxy": [
+            292.2350781217593,
+            1604.144032267142,
+            721.1267561215336,
+            1905.5097900684782
+          ],
+          "area": 35415,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\cd5351ff-futbot_000066\\000066_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 15,
+      "file_name": "5f58b221-futbot_000067.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\test\\futbot_000067.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\5f58b221-futbot_000067.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\5f58b221-futbot_000067.png",
+      "instances": [
+        {
+          "ann_id": 67,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            325.548082400247,
+            1268.0948993144284,
+            28.150680780173666,
+            19.969204634298766
+          ],
+          "bbox_xyxy": [
+            325.548082400247,
+            1268.0948993144284,
+            353.69876318042066,
+            1288.0641039487273
+          ],
+          "area": 601,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\5f58b221-futbot_000067\\000067_ball.png"
+        },
+        {
+          "ann_id": 68,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            432.04045846929324,
+            735.206357604658,
+            134.40505875945365,
+            121.51690244005589
+          ],
+          "bbox_xyxy": [
+            432.04045846929324,
+            735.206357604658,
+            566.4455172287469,
+            856.7232600447139
+          ],
+          "area": 12669,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\5f58b221-futbot_000067\\000068_robot.png"
+        },
+        {
+          "ann_id": 69,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            886.2173639118868,
+            120.13602854869124,
+            144.99175859325615,
+            237.9706006117735
+          ],
+          "bbox_xyxy": [
+            886.2173639118868,
+            120.13602854869124,
+            1031.209122505143,
+            358.10662916046476
+          ],
+          "area": 23642,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\5f58b221-futbot_000067\\000069_robot.png"
+        },
+        {
+          "ann_id": 70,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            456.76558369760374,
+            127.96098059975351,
+            433.1341105912519,
+            116.91398946883953
+          ],
+          "bbox_xyxy": [
+            456.76558369760374,
+            127.96098059975351,
+            889.8996942888557,
+            244.87497006859303
+          ],
+          "area": 37171,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\5f58b221-futbot_000067\\000070_goal.png"
+        },
+        {
+          "ann_id": 71,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            290.6541040673378,
+            1609.4322492535805,
+            423.80060573570023,
+            259.68522945185146
+          ],
+          "bbox_xyxy": [
+            290.6541040673378,
+            1609.4322492535805,
+            714.454709803038,
+            1869.117478705432
+          ],
+          "area": 35062,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\5f58b221-futbot_000067\\000071_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 16,
+      "file_name": "edd1a429-futbot_000068.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000068.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\edd1a429-futbot_000068.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\edd1a429-futbot_000068.png",
+      "instances": [
+        {
+          "ann_id": 72,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            447.2586872586877,
+            766.7656792908875,
+            122.11055536889906,
+            122.80961028439984
+          ],
+          "bbox_xyxy": [
+            447.2586872586877,
+            766.7656792908875,
+            569.3692426275868,
+            889.5752895752873
+          ],
+          "area": 12548,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\edd1a429-futbot_000068\\000072_robot.png"
+        },
+        {
+          "ann_id": 73,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            896.6774376471341,
+            144.37159787568638,
+            148.42501433869577,
+            199.6669835746751
+          ],
+          "bbox_xyxy": [
+            896.6774376471341,
+            144.37159787568638,
+            1045.10245198583,
+            344.03858145036145
+          ],
+          "area": 20823,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\edd1a429-futbot_000068\\000073_robot.png"
+        },
+        {
+          "ann_id": 74,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            454.5083984892445,
+            130.76703924478204,
+            438.6815454467812,
+            104.35596235297871
+          ],
+          "bbox_xyxy": [
+            454.5083984892445,
+            130.76703924478204,
+            893.1899439360257,
+            235.12300159776075
+          ],
+          "area": 37075,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\edd1a429-futbot_000068\\000074_goal.png"
+        },
+        {
+          "ann_id": 75,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            296.80800351763514,
+            1604.5766563446534,
+            420.58645936910295,
+            285.67481635487036
+          ],
+          "bbox_xyxy": [
+            296.80800351763514,
+            1604.5766563446534,
+            717.3944628867381,
+            1890.2514726995237
+          ],
+          "area": 35088,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\edd1a429-futbot_000068\\000075_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 17,
+      "file_name": "c78b1479-futbot_000069.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\test\\futbot_000069.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\c78b1479-futbot_000069.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\c78b1479-futbot_000069.png",
+      "instances": [
+        {
+          "ann_id": 76,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            782.6155587066278,
+            1408.9117376541303,
+            29.593324756226888,
+            35.65180069057251
+          ],
+          "bbox_xyxy": [
+            782.6155587066278,
+            1408.9117376541303,
+            812.2088834628547,
+            1444.563538344703
+          ],
+          "area": 976,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\c78b1479-futbot_000069\\000076_ball.png"
+        },
+        {
+          "ann_id": 77,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            346.49624081183583,
+            774.9436537833752,
+            126.2117468866462,
+            115.00952083161684
+          ],
+          "bbox_xyxy": [
+            346.49624081183583,
+            774.9436537833752,
+            472.70798769848204,
+            889.9531746149921
+          ],
+          "area": 12142,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\c78b1479-futbot_000069\\000077_ball.png"
+        },
+        {
+          "ann_id": 78,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            810.7731671441549,
+            124.46772752141791,
+            146.74916132086113,
+            241.22126771826876
+          ],
+          "bbox_xyxy": [
+            810.7731671441549,
+            124.46772752141791,
+            957.522328465016,
+            365.6889952396867
+          ],
+          "area": 23319,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\c78b1479-futbot_000069\\000078_robot.png"
+        },
+        {
+          "ann_id": 79,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            451.5551183129238,
+            118.1197994235685,
+            377.8884255896162,
+            122.85107907013897
+          ],
+          "bbox_xyxy": [
+            451.5551183129238,
+            118.1197994235685,
+            829.44354390254,
+            240.97087849370746
+          ],
+          "area": 29036,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\c78b1479-futbot_000069\\000079_goal.png"
+        },
+        {
+          "ann_id": 80,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            290.0340227567665,
+            1607.6989964795896,
+            433.2329655458748,
+            276.60705038892286
+          ],
+          "bbox_xyxy": [
+            290.0340227567665,
+            1607.6989964795896,
+            723.2669883026413,
+            1884.3060468685126
+          ],
+          "area": 35589,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\c78b1479-futbot_000069\\000080_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 18,
+      "file_name": "a34c20d7-futbot_000070.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000070.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\a34c20d7-futbot_000070.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\a34c20d7-futbot_000070.png",
+      "instances": [
+        {
+          "ann_id": 81,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            780.4025489097096,
+            1407.0540484646037,
+            30.7164729871326,
+            35.04828328018975
+          ],
+          "bbox_xyxy": [
+            780.4025489097096,
+            1407.0540484646037,
+            811.1190218968422,
+            1442.1023317447934
+          ],
+          "area": 984,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\a34c20d7-futbot_000070\\000081_ball.png"
+        },
+        {
+          "ann_id": 82,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            265.5343452367501,
+            776.8004743705604,
+            128.82916326105038,
+            110.82683477042333
+          ],
+          "bbox_xyxy": [
+            265.5343452367501,
+            776.8004743705604,
+            394.36350849780047,
+            887.6273091409838
+          ],
+          "area": 12344,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\a34c20d7-futbot_000070\\000082_robot.png"
+        },
+        {
+          "ann_id": 83,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            816.1533730592461,
+            129.84179423864805,
+            142.89348239435452,
+            232.3425520821564
+          ],
+          "bbox_xyxy": [
+            816.1533730592461,
+            129.84179423864805,
+            959.0468554536005,
+            362.1843463208045
+          ],
+          "area": 23349,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\a34c20d7-futbot_000070\\000083_robot.png"
+        },
+        {
+          "ann_id": 84,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            463.4202491960208,
+            124.21606658532706,
+            358.3588515165463,
+            122.64086284239733
+          ],
+          "bbox_xyxy": [
+            463.4202491960208,
+            124.21606658532706,
+            821.779100712567,
+            246.85692942772437
+          ],
+          "area": 29733,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\a34c20d7-futbot_000070\\000084_goal.png"
+        },
+        {
+          "ann_id": 85,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            283.04677273727776,
+            1604.0985311409934,
+            433.7136267211165,
+            312.30429916411396
+          ],
+          "bbox_xyxy": [
+            283.04677273727776,
+            1604.0985311409934,
+            716.7603994583942,
+            1916.4028303051073
+          ],
+          "area": 35849,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\a34c20d7-futbot_000070\\000085_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 19,
+      "file_name": "a7837440-futbot_000071.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000071.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\a7837440-futbot_000071.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\a7837440-futbot_000071.png",
+      "instances": [
+        {
+          "ann_id": 86,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            775.7642403191342,
+            1410.9587029371985,
+            38.168398386377746,
+            35.13916041920502
+          ],
+          "bbox_xyxy": [
+            775.7642403191342,
+            1410.9587029371985,
+            813.9326387055119,
+            1446.0978633564034
+          ],
+          "area": 1097,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\a7837440-futbot_000071\\000086_ball.png"
+        },
+        {
+          "ann_id": 87,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            51.22326591720827,
+            723.3358149450801,
+            161.61823556636404,
+            121.876046492668
+          ],
+          "bbox_xyxy": [
+            51.22326591720827,
+            723.3358149450801,
+            212.8415014835723,
+            845.2118614377481
+          ],
+          "area": 13987,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\a7837440-futbot_000071\\000087_robot.png"
+        },
+        {
+          "ann_id": 88,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            869.9123608353475,
+            3.532639028772984,
+            178.39827095303738,
+            213.72466124076553
+          ],
+          "bbox_xyxy": [
+            869.9123608353475,
+            3.532639028772984,
+            1048.3106317883849,
+            217.25730026953852
+          ],
+          "area": 30193,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\a7837440-futbot_000071\\000088_robot.png"
+        },
+        {
+          "ann_id": 89,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            453.94411519732853,
+            130.70764406460043,
+            415.08508588082555,
+            99.79705256283677
+          ],
+          "bbox_xyxy": [
+            453.94411519732853,
+            130.70764406460043,
+            869.0292010781541,
+            230.5046966274372
+          ],
+          "area": 33639,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\a7837440-futbot_000071\\000089_goal.png"
+        },
+        {
+          "ann_id": 90,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            283.04758049807805,
+            1618.8953644309863,
+            431.3042544138198,
+            272.44579106621734
+          ],
+          "bbox_xyxy": [
+            283.04758049807805,
+            1618.8953644309863,
+            714.3518349118979,
+            1891.3411554972035
+          ],
+          "area": 35421,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\a7837440-futbot_000071\\000090_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 20,
+      "file_name": "26f2b4c0-futbot_000072.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000072.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\26f2b4c0-futbot_000072.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\26f2b4c0-futbot_000072.png",
+      "instances": [
+        {
+          "ann_id": 91,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            777.9546822931966,
+            1412.1467550974298,
+            33.866880472992364,
+            31.1102739228646
+          ],
+          "bbox_xyxy": [
+            777.9546822931966,
+            1412.1467550974298,
+            811.8215627661889,
+            1443.2570290202943
+          ],
+          "area": 980,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\26f2b4c0-futbot_000072\\000091_ball.png"
+        },
+        {
+          "ann_id": 92,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            53.84625039607222,
+            725.9204959453367,
+            153.50199739775812,
+            114.12190382451126
+          ],
+          "bbox_xyxy": [
+            53.84625039607222,
+            725.9204959453367,
+            207.34824779383035,
+            840.042399769848
+          ],
+          "area": 13697,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\26f2b4c0-futbot_000072\\000092_robot.png"
+        },
+        {
+          "ann_id": 93,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            456.34790586041737,
+            132.0043908304508,
+            438.8067569590362,
+            112.5145530664196
+          ],
+          "bbox_xyxy": [
+            456.34790586041737,
+            132.0043908304508,
+            895.1546628194535,
+            244.51894389687038
+          ],
+          "area": 37489,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\26f2b4c0-futbot_000072\\000093_goal.png"
+        },
+        {
+          "ann_id": 94,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            293.9021297997878,
+            1605.036777004973,
+            425.69493451984914,
+            279.5787000385636
+          ],
+          "bbox_xyxy": [
+            293.9021297997878,
+            1605.036777004973,
+            719.597064319637,
+            1884.6154770435364
+          ],
+          "area": 35417,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\26f2b4c0-futbot_000072\\000094_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 21,
+      "file_name": "edd964dd-futbot_000073.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000073.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\edd964dd-futbot_000073.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\edd964dd-futbot_000073.png",
+      "instances": [
+        {
+          "ann_id": 95,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            780.4177585278567,
+            1410.8071849983444,
+            31.53836570773076,
+            32.65897041180588
+          ],
+          "bbox_xyxy": [
+            780.4177585278567,
+            1410.8071849983444,
+            811.9561242355875,
+            1443.4661554101503
+          ],
+          "area": 973,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\edd964dd-futbot_000073\\000095_ball.png"
+        },
+        {
+          "ann_id": 96,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            108.26051308295578,
+            719.9815190172528,
+            106.64949354302975,
+            118.2488342304873
+          ],
+          "bbox_xyxy": [
+            108.26051308295578,
+            719.9815190172528,
+            214.91000662598555,
+            838.2303532477401
+          ],
+          "area": 10086,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\edd964dd-futbot_000073\\000096_robot.png"
+        },
+        {
+          "ann_id": 97,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            457.7757563266389,
+            126.5310786934222,
+            438.980210746902,
+            122.83391218147253
+          ],
+          "bbox_xyxy": [
+            457.7757563266389,
+            126.5310786934222,
+            896.7559670735409,
+            249.36499087489472
+          ],
+          "area": 38034,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\edd964dd-futbot_000073\\000097_goal.png"
+        },
+        {
+          "ann_id": 98,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            279.9405688015377,
+            1605.0076377452071,
+            438.31615258965064,
+            268.64770802565465
+          ],
+          "bbox_xyxy": [
+            279.9405688015377,
+            1605.0076377452071,
+            718.2567213911884,
+            1873.655345770862
+          ],
+          "area": 35723,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\edd964dd-futbot_000073\\000098_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 22,
+      "file_name": "fbb6a167-futbot_000074.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000074.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\fbb6a167-futbot_000074.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\fbb6a167-futbot_000074.png",
+      "instances": [
+        {
+          "ann_id": 99,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            780.8293235626152,
+            1412.8889868199703,
+            29.09281798240694,
+            33.91864087048247
+          ],
+          "bbox_xyxy": [
+            780.8293235626152,
+            1412.8889868199703,
+            809.9221415450221,
+            1446.8076276904528
+          ],
+          "area": 924,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\fbb6a167-futbot_000074\\000099_ball.png"
+        },
+        {
+          "ann_id": 100,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            453.55092756195006,
+            123.05645321448253,
+            439.4873329088663,
+            125.40038565666315
+          ],
+          "bbox_xyxy": [
+            453.55092756195006,
+            123.05645321448253,
+            893.0382604708163,
+            248.4568388711457
+          ],
+          "area": 37661,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\fbb6a167-futbot_000074\\000100_goal.png"
+        },
+        {
+          "ann_id": 101,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            290.91704905369687,
+            1610.828279972822,
+            430.7460782024672,
+            297.87612809133896
+          ],
+          "bbox_xyxy": [
+            290.91704905369687,
+            1610.828279972822,
+            721.663127256164,
+            1908.7044080641608
+          ],
+          "area": 35625,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\fbb6a167-futbot_000074\\000101_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 23,
+      "file_name": "eeaf973f-futbot_000075.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000075.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\eeaf973f-futbot_000075.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\eeaf973f-futbot_000075.png",
+      "instances": [
+        {
+          "ann_id": 102,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            781.0595906247873,
+            1412.677358467523,
+            32.10992245203182,
+            33.624541435618966
+          ],
+          "bbox_xyxy": [
+            781.0595906247873,
+            1412.677358467523,
+            813.1695130768192,
+            1446.301899903142
+          ],
+          "area": 992,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\eeaf973f-futbot_000075\\000102_ball.png"
+        },
+        {
+          "ann_id": 103,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            61.821183003527224,
+            663.5362112685958,
+            166.91719410952345,
+            114.81076843512119
+          ],
+          "bbox_xyxy": [
+            61.821183003527224,
+            663.5362112685958,
+            228.73837711305066,
+            778.346979703717
+          ],
+          "area": 14386,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\eeaf973f-futbot_000075\\000103_robot.png"
+        },
+        {
+          "ann_id": 104,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            280.6249813451472,
+            1612.5469176014856,
+            443.21438587530844,
+            286.70888440056825
+          ],
+          "bbox_xyxy": [
+            280.6249813451472,
+            1612.5469176014856,
+            723.8393672204556,
+            1899.2558020020538
+          ],
+          "area": 35773,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\eeaf973f-futbot_000075\\000104_goal.png"
+        },
+        {
+          "ann_id": 105,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            458.5340797000053,
+            128.4460512078592,
+            429.26270999517726,
+            126.44948046369562
+          ],
+          "bbox_xyxy": [
+            458.5340797000053,
+            128.4460512078592,
+            887.7967896951825,
+            254.8955316715548
+          ],
+          "area": 37617,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\eeaf973f-futbot_000075\\000105_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 24,
+      "file_name": "2d99e015-futbot_000076.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000076.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\2d99e015-futbot_000076.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\2d99e015-futbot_000076.png",
+      "instances": [
+        {
+          "ann_id": 106,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            452.20077220077224,
+            130.96525096525093,
+            439.84555984555976,
+            111.1969111969112
+          ],
+          "bbox_xyxy": [
+            452.20077220077224,
+            130.96525096525093,
+            892.046332046332,
+            242.16216216216213
+          ],
+          "area": 37206,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\2d99e015-futbot_000076\\000106_goal.png"
+        },
+        {
+          "ann_id": 107,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            288.9787473313311,
+            1614.4703871451693,
+            429.80900656749554,
+            268.4235414079146
+          ],
+          "bbox_xyxy": [
+            288.9787473313311,
+            1614.4703871451693,
+            718.7877538988266,
+            1882.893928553084
+          ],
+          "area": 35420,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\2d99e015-futbot_000076\\000107_goal.png"
+        },
+        {
+          "ann_id": 108,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            781.1943548290732,
+            1411.505236119034,
+            31.26167884423139,
+            34.659687414256766
+          ],
+          "bbox_xyxy": [
+            781.1943548290732,
+            1411.505236119034,
+            812.4560336733045,
+            1446.1649235332907
+          ],
+          "area": 989,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\2d99e015-futbot_000076\\000108_ball.png"
+        },
+        {
+          "ann_id": 109,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            212.5769603486604,
+            690.8918825200367,
+            148.15969963694505,
+            125.61365838784482
+          ],
+          "bbox_xyxy": [
+            212.5769603486604,
+            690.8918825200367,
+            360.73665998560546,
+            816.5055409078815
+          ],
+          "area": 13808,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\2d99e015-futbot_000076\\000109_robot.png"
+        }
+      ]
+    },
+    {
+      "image_id": 25,
+      "file_name": "a1fe5a16-futbot_000077.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000077.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\a1fe5a16-futbot_000077.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\a1fe5a16-futbot_000077.png",
+      "instances": [
+        {
+          "ann_id": 110,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            450.38988254812233,
+            835.7200290049674,
+            127.59150317731967,
+            119.32168352693792
+          ],
+          "bbox_xyxy": [
+            450.38988254812233,
+            835.7200290049674,
+            577.981385725442,
+            955.0417125319053
+          ],
+          "area": 12148,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\a1fe5a16-futbot_000077\\000110_robot.png"
+        },
+        {
+          "ann_id": 111,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            779.7258527502877,
+            1413.7453592795614,
+            32.68547766579567,
+            31.504074858597413
+          ],
+          "bbox_xyxy": [
+            779.7258527502877,
+            1413.7453592795614,
+            812.4113304160834,
+            1445.249434138159
+          ],
+          "area": 945,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\a1fe5a16-futbot_000077\\000111_ball.png"
+        },
+        {
+          "ann_id": 112,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            285.4028500069868,
+            1600.8109154874214,
+            441.39514996421315,
+            294.66041679215124
+          ],
+          "bbox_xyxy": [
+            285.4028500069868,
+            1600.8109154874214,
+            726.7979999711999,
+            1895.4713322795726
+          ],
+          "area": 35655,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\a1fe5a16-futbot_000077\\000112_goal.png"
+        },
+        {
+          "ann_id": 113,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            459.6138996138996,
+            123.55212355212356,
+            434.90347490347483,
+            123.55212355212353
+          ],
+          "bbox_xyxy": [
+            459.6138996138996,
+            123.55212355212356,
+            894.5173745173745,
+            247.1042471042471
+          ],
+          "area": 37829,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\a1fe5a16-futbot_000077\\000113_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 26,
+      "file_name": "d1a884d3-futbot_000082.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000082.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\d1a884d3-futbot_000082.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\d1a884d3-futbot_000082.png",
+      "instances": [
+        {
+          "ann_id": 114,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            457.14285714285717,
+            133.43629343629343,
+            425.019305019305,
+            93.89961389961391
+          ],
+          "bbox_xyxy": [
+            457.14285714285717,
+            133.43629343629343,
+            882.1621621621622,
+            227.33590733590734
+          ],
+          "area": 35090,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\d1a884d3-futbot_000082\\000114_goal.png"
+        },
+        {
+          "ann_id": 115,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            290.72943996463215,
+            1619.0711292985795,
+            432.92387791499715,
+            252.99694597771196
+          ],
+          "bbox_xyxy": [
+            290.72943996463215,
+            1619.0711292985795,
+            723.6533178796293,
+            1872.0680752762914
+          ],
+          "area": 35364,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\d1a884d3-futbot_000082\\000115_ball.png"
+        },
+        {
+          "ann_id": 116,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            782.8524044270796,
+            1407.5092862195938,
+            28.14144147018544,
+            35.84897002571434
+          ],
+          "bbox_xyxy": [
+            782.8524044270796,
+            1407.5092862195938,
+            810.993845897265,
+            1443.3582562453082
+          ],
+          "area": 977,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\d1a884d3-futbot_000082\\000116_ball.png"
+        },
+        {
+          "ann_id": 117,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            155.95478280393078,
+            724.1006034635291,
+            139.43859357135906,
+            117.93313884144794
+          ],
+          "bbox_xyxy": [
+            155.95478280393078,
+            724.1006034635291,
+            295.39337637528985,
+            842.0337423049771
+          ],
+          "area": 13400,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\d1a884d3-futbot_000082\\000117_robot.png"
+        },
+        {
+          "ann_id": 118,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            899.4594594594595,
+            49.420849420849414,
+            145.79150579150576,
+            168.03088803088806
+          ],
+          "bbox_xyxy": [
+            899.4594594594595,
+            49.420849420849414,
+            1045.2509652509652,
+            217.45173745173747
+          ],
+          "area": 19717,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\d1a884d3-futbot_000082\\000118_robot.png"
+        }
+      ]
+    },
+    {
+      "image_id": 27,
+      "file_name": "7519b736-futbot_000083.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000083.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\7519b736-futbot_000083.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\7519b736-futbot_000083.png",
+      "instances": [
+        {
+          "ann_id": 119,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            867.3359073359072,
+            429.96138996138995,
+            96.3706563706563,
+            155.67567567567568
+          ],
+          "bbox_xyxy": [
+            867.3359073359072,
+            429.96138996138995,
+            963.7065637065635,
+            585.6370656370657
+          ],
+          "area": 11580,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\7519b736-futbot_000083\\000119_robot.png"
+        },
+        {
+          "ann_id": 120,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            118.61003861003861,
+            733.8996138996139,
+            163.08880308880313,
+            128.4942084942085
+          ],
+          "bbox_xyxy": [
+            118.61003861003861,
+            733.8996138996139,
+            281.69884169884176,
+            862.3938223938223
+          ],
+          "area": 13793,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\7519b736-futbot_000083\\000120_robot.png"
+        },
+        {
+          "ann_id": 121,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            781.6431711114477,
+            1411.0420218267618,
+            29.460582498721905,
+            35.158032272083034
+          ],
+          "bbox_xyxy": [
+            781.6431711114477,
+            1411.0420218267618,
+            811.1037536101696,
+            1446.200054098845
+          ],
+          "area": 964,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\7519b736-futbot_000083\\000121_ball.png"
+        },
+        {
+          "ann_id": 122,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            290.3630319836237,
+            1608.7659099260075,
+            436.30508323324386,
+            289.9456829716646
+          ],
+          "bbox_xyxy": [
+            290.3630319836237,
+            1608.7659099260075,
+            726.6681152168676,
+            1898.711592897672
+          ],
+          "area": 35389,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\7519b736-futbot_000083\\000122_goal.png"
+        },
+        {
+          "ann_id": 123,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            456.4574037902541,
+            131.17817912663836,
+            430.8616615216415,
+            115.18084020875553
+          ],
+          "bbox_xyxy": [
+            456.4574037902541,
+            131.17817912663836,
+            887.3190653118957,
+            246.3590193353939
+          ],
+          "area": 36165,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\7519b736-futbot_000083\\000123_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 28,
+      "file_name": "7e89baf1-futbot_000084.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000084.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\7e89baf1-futbot_000084.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\7e89baf1-futbot_000084.png",
+      "instances": [
+        {
+          "ann_id": 124,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            782.5061542821686,
+            1411.285647774266,
+            29.826343061393985,
+            32.855581028566846
+          ],
+          "bbox_xyxy": [
+            782.5061542821686,
+            1411.285647774266,
+            812.3324973435626,
+            1444.1412288028328
+          ],
+          "area": 905,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\7e89baf1-futbot_000084\\000124_ball.png"
+        },
+        {
+          "ann_id": 125,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            179.87698166285193,
+            743.9848159183186,
+            140.09503904418017,
+            112.32845472911723
+          ],
+          "bbox_xyxy": [
+            179.87698166285193,
+            743.9848159183186,
+            319.97202070703213,
+            856.3132706474358
+          ],
+          "area": 12992,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\7e89baf1-futbot_000084\\000125_robot.png"
+        },
+        {
+          "ann_id": 126,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            879.9543811846618,
+            442.96979959366115,
+            128.10492308994858,
+            168.49268209367617
+          ],
+          "bbox_xyxy": [
+            879.9543811846618,
+            442.96979959366115,
+            1008.0593042746103,
+            611.4624816873373
+          ],
+          "area": 17059,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\7e89baf1-futbot_000084\\000126_robot.png"
+        },
+        {
+          "ann_id": 127,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            457.14502911438836,
+            135.6441959246714,
+            417.7608821948075,
+            111.69739599468417
+          ],
+          "bbox_xyxy": [
+            457.14502911438836,
+            135.6441959246714,
+            874.9059113091959,
+            247.34159191935558
+          ],
+          "area": 34349,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\7e89baf1-futbot_000084\\000127_goal.png"
+        },
+        {
+          "ann_id": 128,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            285.74848865857444,
+            1604.6022139574154,
+            442.72827986105636,
+            275.9636145906094
+          ],
+          "bbox_xyxy": [
+            285.74848865857444,
+            1604.6022139574154,
+            728.4767685196308,
+            1880.565828548025
+          ],
+          "area": 35451,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\7e89baf1-futbot_000084\\000128_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 29,
+      "file_name": "726f78b8-futbot_000085.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000085.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\726f78b8-futbot_000085.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\726f78b8-futbot_000085.png",
+      "instances": [
+        {
+          "ann_id": 129,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            873.9189804278559,
+            444.3220045586908,
+            139.46712171564238,
+            160.83708391400702
+          ],
+          "bbox_xyxy": [
+            873.9189804278559,
+            444.3220045586908,
+            1013.3861021434983,
+            605.1590884726978
+          ],
+          "area": 19114,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\726f78b8-futbot_000085\\000129_robot.png"
+        },
+        {
+          "ann_id": 130,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            55.11200777472966,
+            733.3788616628851,
+            155.21340965127942,
+            103.47560643418636
+          ],
+          "bbox_xyxy": [
+            55.11200777472966,
+            733.3788616628851,
+            210.3254174260091,
+            836.8544680970715
+          ],
+          "area": 14024,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\726f78b8-futbot_000085\\000130_robot.png"
+        },
+        {
+          "ann_id": 131,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            783.0740944577188,
+            1409.4405128909953,
+            30.204531770680276,
+            34.30006150229792
+          ],
+          "bbox_xyxy": [
+            783.0740944577188,
+            1409.4405128909953,
+            813.2786262283992,
+            1443.7405743932932
+          ],
+          "area": 953,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\726f78b8-futbot_000085\\000131_ball.png"
+        },
+        {
+          "ann_id": 132,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            293.65817779511764,
+            1606.196072560231,
+            433.110516242273,
+            294.03563073590374
+          ],
+          "bbox_xyxy": [
+            293.65817779511764,
+            1606.196072560231,
+            726.7686940373906,
+            1900.2317032961346
+          ],
+          "area": 35700,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\726f78b8-futbot_000085\\000132_goal.png"
+        },
+        {
+          "ann_id": 133,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            459.28440561712455,
+            130.91068249277913,
+            299.11993932707645,
+            110.43303383469078
+          ],
+          "bbox_xyxy": [
+            459.28440561712455,
+            130.91068249277913,
+            758.4043449442011,
+            241.3437163274699
+          ],
+          "area": 25194,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\726f78b8-futbot_000085\\000133_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 30,
+      "file_name": "b6bf683f-futbot_000086.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000086.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\b6bf683f-futbot_000086.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\b6bf683f-futbot_000086.png",
+      "instances": [
+        {
+          "ann_id": 134,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            460.3975457278914,
+            122.45633897536834,
+            429.26270999517715,
+            125.11843330091986
+          ],
+          "bbox_xyxy": [
+            460.3975457278914,
+            122.45633897536834,
+            889.6602557230685,
+            247.5747722762882
+          ],
+          "area": 37352,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\b6bf683f-futbot_000086\\000134_goal.png"
+        },
+        {
+          "ann_id": 135,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            287.2585776540968,
+            1611.3413508998824,
+            433.67533542365527,
+            276.04799243079
+          ],
+          "bbox_xyxy": [
+            287.2585776540968,
+            1611.3413508998824,
+            720.9339130777521,
+            1887.3893433306723
+          ],
+          "area": 35398,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\b6bf683f-futbot_000086\\000135_goal.png"
+        },
+        {
+          "ann_id": 136,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            781.6785245262424,
+            1407.2486255043862,
+            30.525397976895043,
+            31.22445289239702
+          ],
+          "bbox_xyxy": [
+            781.6785245262424,
+            1407.2486255043862,
+            812.2039225031375,
+            1438.4730783967832
+          ],
+          "area": 911,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\b6bf683f-futbot_000086\\000136_ball.png"
+        },
+        {
+          "ann_id": 137,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            55.707000069112425,
+            747.1886100513417,
+            153.53392701974886,
+            119.56624405077783
+          ],
+          "bbox_xyxy": [
+            55.707000069112425,
+            747.1886100513417,
+            209.24092708886127,
+            866.7548541021196
+          ],
+          "area": 13763,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\b6bf683f-futbot_000086\\000137_robot.png"
+        },
+        {
+          "ann_id": 138,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            741.6818776290486,
+            578.7089025252409,
+            140.62620749153461,
+            146.74039042595362
+          ],
+          "bbox_xyxy": [
+            741.6818776290486,
+            578.7089025252409,
+            882.3080851205832,
+            725.4492929511945
+          ],
+          "area": 15639,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\b6bf683f-futbot_000086\\000138_robot.png"
+        }
+      ]
+    },
+    {
+      "image_id": 31,
+      "file_name": "67464a6f-futbot_000087.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000087.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\67464a6f-futbot_000087.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\67464a6f-futbot_000087.png",
+      "instances": [
+        {
+          "ann_id": 139,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            537.5982811688846,
+            1232.866694888333,
+            131.77366911479854,
+            107.14929660344733
+          ],
+          "bbox_xyxy": [
+            537.5982811688846,
+            1232.866694888333,
+            669.3719502836831,
+            1340.0159914917804
+          ],
+          "area": 12545,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\67464a6f-futbot_000087\\000139_robot.png"
+        },
+        {
+          "ann_id": 140,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            782.5109591196212,
+            1403.906255305016,
+            33.94170265078145,
+            35.27274981355722
+          ],
+          "bbox_xyxy": [
+            782.5109591196212,
+            1403.906255305016,
+            816.4526617704028,
+            1439.1790051185733
+          ],
+          "area": 1057,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\67464a6f-futbot_000087\\000140_ball.png"
+        },
+        {
+          "ann_id": 141,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            296.67216934767254,
+            1610.062300612628,
+            424.615446445963,
+            280.7843974617508
+          ],
+          "bbox_xyxy": [
+            296.67216934767254,
+            1610.062300612628,
+            721.2876157936355,
+            1890.8466980743788
+          ],
+          "area": 35304,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\67464a6f-futbot_000087\\000141_goal.png"
+        },
+        {
+          "ann_id": 142,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            461.20784190179495,
+            129.11157478924707,
+            433.2558514835044,
+            108.48034376622309
+          ],
+          "bbox_xyxy": [
+            461.20784190179495,
+            129.11157478924707,
+            894.4636933852994,
+            237.59191855547016
+          ],
+          "area": 37090,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\67464a6f-futbot_000087\\000142_goal.png"
+        },
+        {
+          "ann_id": 143,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            54.643176392199486,
+            749.5645231475428,
+            162.79730683180205,
+            113.13900883593851
+          ],
+          "bbox_xyxy": [
+            54.643176392199486,
+            749.5645231475428,
+            217.44048322400153,
+            862.7035319834813
+          ],
+          "area": 13793,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\67464a6f-futbot_000087\\000143_robot.png"
+        }
+      ]
+    },
+    {
+      "image_id": 32,
+      "file_name": "ce2a2bcf-futbot_000088.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000088.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\ce2a2bcf-futbot_000088.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\ce2a2bcf-futbot_000088.png",
+      "instances": [
+        {
+          "ann_id": 144,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            785.7915057915058,
+            1114.4401544401544,
+            153.20463320463304,
+            135.90733590733595
+          ],
+          "bbox_xyxy": [
+            785.7915057915058,
+            1114.4401544401544,
+            938.9961389961388,
+            1250.3474903474903
+          ],
+          "area": 14883,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\ce2a2bcf-futbot_000088\\000144_robot.png"
+        },
+        {
+          "ann_id": 145,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            46.94980694980694,
+            746.2548262548263,
+            165.55984555984557,
+            113.66795366795358
+          ],
+          "bbox_xyxy": [
+            46.94980694980694,
+            746.2548262548263,
+            212.5096525096525,
+            859.9227799227799
+          ],
+          "area": 13627,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\ce2a2bcf-futbot_000088\\000145_robot.png"
+        },
+        {
+          "ann_id": 146,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            783.7905092369552,
+            1408.6245418624987,
+            31.690489502731236,
+            29.826343061394073
+          ],
+          "bbox_xyxy": [
+            783.7905092369552,
+            1408.6245418624987,
+            815.4809987396865,
+            1438.4508849238928
+          ],
+          "area": 907,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\ce2a2bcf-futbot_000088\\000146_ball.png"
+        },
+        {
+          "ann_id": 147,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            289.8757129961508,
+            1609.6288932471261,
+            438.56281216854995,
+            277.9749076905314
+          ],
+          "bbox_xyxy": [
+            289.8757129961508,
+            1609.6288932471261,
+            728.4385251647008,
+            1887.6038009376575
+          ],
+          "area": 35250,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\ce2a2bcf-futbot_000088\\000147_goal.png"
+        },
+        {
+          "ann_id": 148,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            459.04897269495086,
+            127.13618482672004,
+            427.0223001813498,
+            125.19517437135028
+          ],
+          "bbox_xyxy": [
+            459.04897269495086,
+            127.13618482672004,
+            886.0712728763007,
+            252.33135919807032
+          ],
+          "area": 37560,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\ce2a2bcf-futbot_000088\\000148_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 33,
+      "file_name": "5b712635-futbot_000089.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000089.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\5b712635-futbot_000089.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\5b712635-futbot_000089.png",
+      "instances": [
+        {
+          "ann_id": 149,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            783.0740944577187,
+            1306.0944541267545,
+            145.31254528528075,
+            136.64892469916668
+          ],
+          "bbox_xyxy": [
+            783.0740944577187,
+            1306.0944541267545,
+            928.3866397429995,
+            1442.7433788259211
+          ],
+          "area": 15559,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\5b712635-futbot_000089\\000149_robot.png"
+        },
+        {
+          "ann_id": 150,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            59.179754251627834,
+            742.9682670848113,
+            148.989606531872,
+            114.40632404404147
+          ],
+          "bbox_xyxy": [
+            59.179754251627834,
+            742.9682670848113,
+            208.16936078349983,
+            857.3745911288527
+          ],
+          "area": 13332,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\5b712635-futbot_000089\\000150_robot.png"
+        },
+        {
+          "ann_id": 151,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            854.3138954269089,
+            1559.3414420278036,
+            32.15652611306559,
+            37.98198374224394
+          ],
+          "bbox_xyxy": [
+            854.3138954269089,
+            1559.3414420278036,
+            886.4704215399745,
+            1597.3234257700476
+          ],
+          "area": 1091,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\5b712635-futbot_000089\\000151_ball.png"
+        },
+        {
+          "ann_id": 152,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            293.94779113773035,
+            1600.565844346449,
+            425.5602857610127,
+            284.6552401365792
+          ],
+          "bbox_xyxy": [
+            293.94779113773035,
+            1600.565844346449,
+            719.5080768987431,
+            1885.2210844830283
+          ],
+          "area": 35216,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\5b712635-futbot_000089\\000152_goal.png"
+        },
+        {
+          "ann_id": 153,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            461.96048837800555,
+            129.75654894146916,
+            418.48185417772265,
+            110.73464647884546
+          ],
+          "bbox_xyxy": [
+            461.96048837800555,
+            129.75654894146916,
+            880.4423425557281,
+            240.49119542031463
+          ],
+          "area": 36896,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\5b712635-futbot_000089\\000153_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 34,
+      "file_name": "fcfc0620-futbot_000090.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\val\\futbot_000090.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\fcfc0620-futbot_000090.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\fcfc0620-futbot_000090.png",
+      "instances": [
+        {
+          "ann_id": 154,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            287.5557590655334,
+            1599.3054645478865,
+            436.17741390617067,
+            295.5076258478657
+          ],
+          "bbox_xyxy": [
+            287.5557590655334,
+            1599.3054645478865,
+            723.7331729717041,
+            1894.8130903957522
+          ],
+          "area": 35439,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\fcfc0620-futbot_000090\\000154_goal.png"
+        },
+        {
+          "ann_id": 155,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            942.2661509055947,
+            1758.5404292040846,
+            34.965508185558676,
+            41.45910256287716
+          ],
+          "bbox_xyxy": [
+            942.2661509055947,
+            1758.5404292040846,
+            977.2316590911533,
+            1799.9995317669618
+          ],
+          "area": 1251,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\fcfc0620-futbot_000090\\000155_ball.png"
+        },
+        {
+          "ann_id": 156,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            827.5765062267022,
+            1487.8409890518044,
+            149.99780687682494,
+            181.0653138027696
+          ],
+          "bbox_xyxy": [
+            827.5765062267022,
+            1487.8409890518044,
+            977.5743131035272,
+            1668.906302854574
+          ],
+          "area": 21113,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\fcfc0620-futbot_000090\\000156_robot.png"
+        },
+        {
+          "ann_id": 157,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            56.609888713455405,
+            734.5133060570838,
+            151.43145230849322,
+            125.9570023874383
+          ],
+          "bbox_xyxy": [
+            56.609888713455405,
+            734.5133060570838,
+            208.04134102194863,
+            860.4703084445221
+          ],
+          "area": 13739,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\fcfc0620-futbot_000090\\000157_robot.png"
+        },
+        {
+          "ann_id": 158,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            459.9553457968252,
+            127.37224960527466,
+            437.31139031144284,
+            117.46551908041997
+          ],
+          "bbox_xyxy": [
+            459.9553457968252,
+            127.37224960527466,
+            897.2667361082681,
+            244.83776868569464
+          ],
+          "area": 37206,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\fcfc0620-futbot_000090\\000158_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 35,
+      "file_name": "34e65daf-futbot_000091.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000091.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\34e65daf-futbot_000091.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\34e65daf-futbot_000091.png",
+      "instances": [
+        {
+          "ann_id": 159,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            1043.4194183411082,
+            1808.7651700576555,
+            29.861699313380978,
+            28.368614347712082
+          ],
+          "bbox_xyxy": [
+            1043.4194183411082,
+            1808.7651700576555,
+            1073.2811176544892,
+            1837.1337844053676
+          ],
+          "area": 796,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\34e65daf-futbot_000091\\000159_ball.png"
+        },
+        {
+          "ann_id": 160,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            947.1154380554541,
+            1600.4798173468223,
+            132.88456194454582,
+            206.04572526232943
+          ],
+          "bbox_xyxy": [
+            947.1154380554541,
+            1600.4798173468223,
+            1079.0,
+            1806.5255426091517
+          ],
+          "area": 22226,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\34e65daf-futbot_000091\\000160_robot.png"
+        },
+        {
+          "ann_id": 161,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            108.99520249384102,
+            744.1955895356191,
+            95.55743780281949,
+            111.2348299423444
+          ],
+          "bbox_xyxy": [
+            108.99520249384102,
+            744.1955895356191,
+            204.5526402966605,
+            855.4304194779635
+          ],
+          "area": 9420,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\34e65daf-futbot_000091\\000161_robot.png"
+        },
+        {
+          "ann_id": 162,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            461.11628173017675,
+            126.80495623146497,
+            423.28958776717707,
+            128.4053070475387
+          ],
+          "bbox_xyxy": [
+            461.11628173017675,
+            126.80495623146497,
+            884.4058694973538,
+            255.2102632790037
+          ],
+          "area": 37694,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\34e65daf-futbot_000091\\000162_goal.png"
+        },
+        {
+          "ann_id": 163,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            285.1228282770507,
+            1612.4115784588432,
+            437.35290327804563,
+            276.4888272799197
+          ],
+          "bbox_xyxy": [
+            285.1228282770507,
+            1612.4115784588432,
+            722.4757315550963,
+            1888.9004057387629
+          ],
+          "area": 35674,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\34e65daf-futbot_000091\\000163_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 36,
+      "file_name": "2856a70f-futbot_000092.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000092.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\2856a70f-futbot_000092.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\2856a70f-futbot_000092.png",
+      "instances": [
+        {
+          "ann_id": 164,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            456.81947042582647,
+            130.51688155704667,
+            439.93190248970063,
+            119.26542625040473
+          ],
+          "bbox_xyxy": [
+            456.81947042582647,
+            130.51688155704667,
+            896.7513729155271,
+            249.7823078074514
+          ],
+          "area": 37586,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\2856a70f-futbot_000092\\000164_goal.png"
+        },
+        {
+          "ann_id": 165,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            289.73241383836717,
+            1601.300447985347,
+            432.34805327668323,
+            293.14693380955975
+          ],
+          "bbox_xyxy": [
+            289.73241383836717,
+            1601.300447985347,
+            722.0804671150504,
+            1894.447381794907
+          ],
+          "area": 35770,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\2856a70f-futbot_000092\\000165_goal.png"
+        },
+        {
+          "ann_id": 166,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            94.89199482967234,
+            745.2849387739622,
+            147.7462350681075,
+            121.79081539398048
+          ],
+          "bbox_xyxy": [
+            94.89199482967234,
+            745.2849387739622,
+            242.63822989777984,
+            867.0757541679426
+          ],
+          "area": 13561,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\2856a70f-futbot_000092\\000166_robot.png"
+        },
+        {
+          "ann_id": 167,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            952.2194723735262,
+            1497.3265857422573,
+            127.78052762647125,
+            169.04298967251972
+          ],
+          "bbox_xyxy": [
+            952.2194723735262,
+            1497.3265857422573,
+            1079.0,
+            1666.369575414777
+          ],
+          "area": 18914,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\2856a70f-futbot_000092\\000167_robot.png"
+        },
+        {
+          "ann_id": 168,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            992.1508872568007,
+            1669.031669740328,
+            31.279608325230047,
+            31.945131906617643
+          ],
+          "bbox_xyxy": [
+            992.1508872568007,
+            1669.031669740328,
+            1023.4304955820307,
+            1700.9768016469457
+          ],
+          "area": 977,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\2856a70f-futbot_000092\\000168_ball.png"
+        }
+      ]
+    },
+    {
+      "image_id": 37,
+      "file_name": "ad23b16f-futbot_000093.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\val\\futbot_000093.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\ad23b16f-futbot_000093.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\ad23b16f-futbot_000093.png",
+      "instances": [
+        {
+          "ann_id": 169,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            1022.7474024204334,
+            1798.008348094771,
+            26.35437031440356,
+            32.109922452032244
+          ],
+          "bbox_xyxy": [
+            1022.7474024204334,
+            1798.008348094771,
+            1049.101772734837,
+            1830.1182705468032
+          ],
+          "area": 726,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\ad23b16f-futbot_000093\\000169_ball.png"
+        },
+        {
+          "ann_id": 170,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            935.0293258567286,
+            1627.4621620273092,
+            144.9706741432713,
+            168.33908131860474
+          ],
+          "bbox_xyxy": [
+            935.0293258567286,
+            1627.4621620273092,
+            1079.0,
+            1795.801243345914
+          ],
+          "area": 20330,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\ad23b16f-futbot_000093\\000170_robot.png"
+        },
+        {
+          "ann_id": 171,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            62.28549708856096,
+            746.3594253168433,
+            145.774567654079,
+            116.17791300916066
+          ],
+          "bbox_xyxy": [
+            62.28549708856096,
+            746.3594253168433,
+            208.06006474263995,
+            862.5373383260039
+          ],
+          "area": 13599,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\ad23b16f-futbot_000093\\000171_robot.png"
+        },
+        {
+          "ann_id": 172,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            282.435838197183,
+            1605.6697066495697,
+            451.95969297736616,
+            293.0320576179547
+          ],
+          "bbox_xyxy": [
+            282.435838197183,
+            1605.6697066495697,
+            734.3955311745492,
+            1898.7017642675244
+          ],
+          "area": 35736,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\ad23b16f-futbot_000093\\000172_goal.png"
+        },
+        {
+          "ann_id": 173,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            459.9392414816471,
+            133.34372967325066,
+            438.03737283966404,
+            112.08603363838458
+          ],
+          "bbox_xyxy": [
+            459.9392414816471,
+            133.34372967325066,
+            897.9766143213112,
+            245.42976331163524
+          ],
+          "area": 37547,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\ad23b16f-futbot_000093\\000173_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 38,
+      "file_name": "f80512b6-futbot_000094.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000094.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\f80512b6-futbot_000094.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\f80512b6-futbot_000094.png",
+      "instances": [
+        {
+          "ann_id": 174,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            897.2369857265616,
+            1645.5995079816162,
+            151.02265885340157,
+            207.84813387959676
+          ],
+          "bbox_xyxy": [
+            897.2369857265616,
+            1645.5995079816162,
+            1048.2596445799632,
+            1853.447641861213
+          ],
+          "area": 24658,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\f80512b6-futbot_000094\\000174_robot.png"
+        },
+        {
+          "ann_id": 175,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            782.5621532412667,
+            1657.3741559600169,
+            34.81200271874995,
+            41.46723853262911
+          ],
+          "bbox_xyxy": [
+            782.5621532412667,
+            1657.3741559600169,
+            817.3741559600167,
+            1698.841394492646
+          ],
+          "area": 1318,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\f80512b6-futbot_000094\\000175_ball.png"
+        },
+        {
+          "ann_id": 176,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            288.3190792562961,
+            1602.553430348407,
+            431.006136016036,
+            276.3001220840213
+          ],
+          "bbox_xyxy": [
+            288.3190792562961,
+            1602.553430348407,
+            719.3252152723321,
+            1878.8535524324282
+          ],
+          "area": 35731,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\f80512b6-futbot_000094\\000176_goal.png"
+        },
+        {
+          "ann_id": 177,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            460.2351535905298,
+            128.204707491531,
+            440.4888495273848,
+            114.0897568093495
+          ],
+          "bbox_xyxy": [
+            460.2351535905298,
+            128.204707491531,
+            900.7240031179147,
+            242.2944643008805
+          ],
+          "area": 37281,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\f80512b6-futbot_000094\\000177_goal.png"
+        },
+        {
+          "ann_id": 178,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            55.22397961729368,
+            753.075977181127,
+            164.17939886222445,
+            111.94049922424387
+          ],
+          "bbox_xyxy": [
+            55.22397961729368,
+            753.075977181127,
+            219.40337847951812,
+            865.0164764053709
+          ],
+          "area": 13741,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\f80512b6-futbot_000094\\000178_robot.png"
+        }
+      ]
+    },
+    {
+      "image_id": 39,
+      "file_name": "52dca027-futbot_000095.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000095.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\52dca027-futbot_000095.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\52dca027-futbot_000095.png",
+      "instances": [
+        {
+          "ann_id": 179,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            629.404414405643,
+            1553.1089335286583,
+            25.645801633779975,
+            33.64287956259322
+          ],
+          "bbox_xyxy": [
+            629.404414405643,
+            1553.1089335286583,
+            655.050216039423,
+            1586.7518130912515
+          ],
+          "area": 879,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\52dca027-futbot_000095\\000179_ball.png"
+        },
+        {
+          "ann_id": 180,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            727.549311027622,
+            1302.3389966466084,
+            139.89057601421996,
+            147.1262954632318
+          ],
+          "bbox_xyxy": [
+            727.549311027622,
+            1302.3389966466084,
+            867.439887041842,
+            1449.4652921098402
+          ],
+          "area": 16090,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\52dca027-futbot_000095\\000180_robot.png"
+        },
+        {
+          "ann_id": 181,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            54.669880281420745,
+            743.1786770035478,
+            151.9501084292423,
+            118.18341766718882
+          ],
+          "bbox_xyxy": [
+            54.669880281420745,
+            743.1786770035478,
+            206.61998871066305,
+            861.3620946707366
+          ],
+          "area": 13516,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\52dca027-futbot_000095\\000181_robot.png"
+        },
+        {
+          "ann_id": 182,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            286.8286229615169,
+            1600.1835610422522,
+            437.3276791950141,
+            302.93742099204627
+          ],
+          "bbox_xyxy": [
+            286.8286229615169,
+            1600.1835610422522,
+            724.156302156531,
+            1903.1209820342985
+          ],
+          "area": 35781,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\52dca027-futbot_000095\\000182_goal.png"
+        },
+        {
+          "ann_id": 183,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            462.06802152830414,
+            130.6859050787123,
+            433.2860067193022,
+            111.23859777533248
+          ],
+          "bbox_xyxy": [
+            462.06802152830414,
+            130.6859050787123,
+            895.3540282476063,
+            241.92450285404476
+          ],
+          "area": 37298,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\52dca027-futbot_000095\\000183_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 40,
+      "file_name": "392c4a72-futbot_000096.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\test\\futbot_000096.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\392c4a72-futbot_000096.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\392c4a72-futbot_000096.png",
+      "instances": [
+        {
+          "ann_id": 184,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            541.8903175674328,
+            1536.553970125384,
+            27.17226456554033,
+            34.654482344457215
+          ],
+          "bbox_xyxy": [
+            541.8903175674328,
+            1536.553970125384,
+            569.0625821329731,
+            1571.2084524698412
+          ],
+          "area": 914,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\392c4a72-futbot_000096\\000184_ball.png"
+        },
+        {
+          "ann_id": 185,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            558.4097268686402,
+            1334.5913711973355,
+            114.20227136241597,
+            123.25969288426268
+          ],
+          "bbox_xyxy": [
+            558.4097268686402,
+            1334.5913711973355,
+            672.6119982310562,
+            1457.8510640815982
+          ],
+          "area": 13463,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\392c4a72-futbot_000096\\000185_robot.png"
+        },
+        {
+          "ann_id": 186,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            64.18955252439235,
+            750.1907825703523,
+            143.73734154235095,
+            114.59607229814824
+          ],
+          "bbox_xyxy": [
+            64.18955252439235,
+            750.1907825703523,
+            207.9268940667433,
+            864.7868548685005
+          ],
+          "area": 13641,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\392c4a72-futbot_000096\\000186_robot.png"
+        },
+        {
+          "ann_id": 187,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            458.75893199755484,
+            126.17703451019906,
+            438.8067569590364,
+            116.53292996164886
+          ],
+          "bbox_xyxy": [
+            458.75893199755484,
+            126.17703451019906,
+            897.5656889565912,
+            242.7099644718479
+          ],
+          "area": 37303,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\392c4a72-futbot_000096\\000187_goal.png"
+        },
+        {
+          "ann_id": 188,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            294.0154173286318,
+            1596.5279645077578,
+            433.4130589558631,
+            303.2640871141598
+          ],
+          "bbox_xyxy": [
+            294.0154173286318,
+            1596.5279645077578,
+            727.428476284495,
+            1899.7920516219176
+          ],
+          "area": 35549,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\392c4a72-futbot_000096\\000188_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 41,
+      "file_name": "53ce475d-futbot_000097.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000097.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\53ce475d-futbot_000097.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\53ce475d-futbot_000097.png",
+      "instances": [
+        {
+          "ann_id": 189,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            464.2078510674858,
+            128.71664870798398,
+            430.0306218198555,
+            117.0151351890763
+          ],
+          "bbox_xyxy": [
+            464.2078510674858,
+            128.71664870798398,
+            894.2384728873413,
+            245.73178389706027
+          ],
+          "area": 37118,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\53ce475d-futbot_000097\\000189_goal.png"
+        },
+        {
+          "ann_id": 190,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            290.33555527455627,
+            1598.8558421511716,
+            438.38993745835364,
+            285.8622259421654
+          ],
+          "bbox_xyxy": [
+            290.33555527455627,
+            1598.8558421511716,
+            728.72549273291,
+            1884.718068093337
+          ],
+          "area": 35367,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\53ce475d-futbot_000097\\000190_goal.png"
+        },
+        {
+          "ann_id": 191,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            531.6875205153656,
+            1541.894844420297,
+            23.403027037815285,
+            28.522439202337317
+          ],
+          "bbox_xyxy": [
+            531.6875205153656,
+            1541.894844420297,
+            555.0905475531808,
+            1570.4172836226344
+          ],
+          "area": 848,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\53ce475d-futbot_000097\\000191_ball.png"
+        },
+        {
+          "ann_id": 192,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            468.0605407563053,
+            1401.4766821934056,
+            127.25395951812057,
+            136.76143925223295
+          ],
+          "bbox_xyxy": [
+            468.0605407563053,
+            1401.4766821934056,
+            595.3145002744259,
+            1538.2381214456386
+          ],
+          "area": 14075,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\53ce475d-futbot_000097\\000192_robot.png"
+        },
+        {
+          "ann_id": 193,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            60.70160137933334,
+            746.9232697295097,
+            146.26891898634543,
+            111.89572302455399
+          ],
+          "bbox_xyxy": [
+            60.70160137933334,
+            746.9232697295097,
+            206.97052036567877,
+            858.8189927540636
+          ],
+          "area": 13510,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\53ce475d-futbot_000097\\000193_robot.png"
+        }
+      ]
+    },
+    {
+      "image_id": 42,
+      "file_name": "49dd3755-futbot_000098.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000098.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\49dd3755-futbot_000098.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\49dd3755-futbot_000098.png",
+      "instances": [
+        {
+          "ann_id": 194,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            457.14285714285717,
+            130.96525096525093,
+            439.8455598455598,
+            106.25482625482627
+          ],
+          "bbox_xyxy": [
+            457.14285714285717,
+            130.96525096525093,
+            896.9884169884169,
+            237.2200772200772
+          ],
+          "area": 37169,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\49dd3755-futbot_000098\\000194_goal.png"
+        },
+        {
+          "ann_id": 195,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            287.2256181139873,
+            1602.153028900839,
+            439.8546419305949,
+            272.8204905370837
+          ],
+          "bbox_xyxy": [
+            287.2256181139873,
+            1602.153028900839,
+            727.0802600445822,
+            1874.9735194379227
+          ],
+          "area": 35311,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\49dd3755-futbot_000098\\000195_goal.png"
+        },
+        {
+          "ann_id": 196,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            530.2775217736179,
+            1539.3205114461368,
+            24.62437251135131,
+            27.286466836902672
+          ],
+          "bbox_xyxy": [
+            530.2775217736179,
+            1539.3205114461368,
+            554.9018942849692,
+            1566.6069782830396
+          ],
+          "area": 736,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\49dd3755-futbot_000098\\000196_ball.png"
+        },
+        {
+          "ann_id": 197,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            532.2740925177816,
+            1389.5777056338661,
+            116.46662674287752,
+            150.4083293936591
+          ],
+          "bbox_xyxy": [
+            532.2740925177816,
+            1389.5777056338661,
+            648.7407192606591,
+            1539.9860350275253
+          ],
+          "area": 16136,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\49dd3755-futbot_000098\\000197_robot.png"
+        },
+        {
+          "ann_id": 198,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            61.22816948768387,
+            745.3508788504047,
+            155.73251804476132,
+            115.80110316149117
+          ],
+          "bbox_xyxy": [
+            61.22816948768387,
+            745.3508788504047,
+            216.9606875324452,
+            861.1519820118958
+          ],
+          "area": 13602,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\49dd3755-futbot_000098\\000198_robot.png"
+        }
+      ]
+    },
+    {
+      "image_id": 43,
+      "file_name": "d87f5161-futbot_000099.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\val\\futbot_000099.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\d87f5161-futbot_000099.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\d87f5161-futbot_000099.png",
+      "instances": [
+        {
+          "ann_id": 199,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            485.8307853612372,
+            1433.9247517331632,
+            127.98530411305181,
+            153.07042371921037
+          ],
+          "bbox_xyxy": [
+            485.8307853612372,
+            1433.9247517331632,
+            613.816089474289,
+            1586.9951754523736
+          ],
+          "area": 15892,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\d87f5161-futbot_000099\\000199_robot.png"
+        },
+        {
+          "ann_id": 200,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            284.34871828573347,
+            1609.8823443742126,
+            432.5323084713345,
+            266.883774676571
+          ],
+          "bbox_xyxy": [
+            284.34871828573347,
+            1609.8823443742126,
+            716.881026757068,
+            1876.7661190507836
+          ],
+          "area": 35483,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\d87f5161-futbot_000099\\000200_goal.png"
+        },
+        {
+          "ann_id": 201,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            462.2829184563447,
+            128.49724532950447,
+            433.614210335021,
+            114.67483248529479
+          ],
+          "bbox_xyxy": [
+            462.2829184563447,
+            128.49724532950447,
+            895.8971287913657,
+            243.17207781479925
+          ],
+          "area": 37357,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\d87f5161-futbot_000099\\000201_goal.png"
+        },
+        {
+          "ann_id": 202,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            57.77622299960643,
+            741.5834192607712,
+            148.46295277114058,
+            119.20916897387151
+          ],
+          "bbox_xyxy": [
+            57.77622299960643,
+            741.5834192607712,
+            206.239175770747,
+            860.7925882346427
+          ],
+          "area": 13708,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\d87f5161-futbot_000099\\000202_robot.png"
+        }
+      ]
+    },
+    {
+      "image_id": 44,
+      "file_name": "140bae2a-futbot_000100.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000100.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\140bae2a-futbot_000100.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\140bae2a-futbot_000100.png",
+      "instances": [
+        {
+          "ann_id": 203,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            61.039145038532595,
+            740.6602631355714,
+            148.85675370687306,
+            116.95887791254309
+          ],
+          "bbox_xyxy": [
+            61.039145038532595,
+            740.6602631355714,
+            209.89589874540565,
+            857.6191410481146
+          ],
+          "area": 13477,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\140bae2a-futbot_000100\\000203_robot.png"
+        },
+        {
+          "ann_id": 204,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            488.31316030826076,
+            1433.8292070019183,
+            125.22869756292499,
+            149.25055464260433
+          ],
+          "bbox_xyxy": [
+            488.31316030826076,
+            1433.8292070019183,
+            613.5418578711858,
+            1583.0797616445227
+          ],
+          "area": 15339,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\140bae2a-futbot_000100\\000204_robot.png"
+        },
+        {
+          "ann_id": 205,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            286.5414067198766,
+            1610.813929168835,
+            433.68488063259224,
+            266.70042736660344
+          ],
+          "bbox_xyxy": [
+            286.5414067198766,
+            1610.813929168835,
+            720.2262873524688,
+            1877.5143565354385
+          ],
+          "area": 35241,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\140bae2a-futbot_000100\\000205_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 45,
+      "file_name": "2b7c0916-futbot_000101.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000101.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\2b7c0916-futbot_000101.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\2b7c0916-futbot_000101.png",
+      "instances": [
+        {
+          "ann_id": 206,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            525.4800555299813,
+            1549.072901978837,
+            25.611632958604147,
+            27.377952472990547
+          ],
+          "bbox_xyxy": [
+            525.4800555299813,
+            1549.072901978837,
+            551.0916884885854,
+            1576.4508544518276
+          ],
+          "area": 667,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\2b7c0916-futbot_000101\\000206_ball.png"
+        },
+        {
+          "ann_id": 207,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            502.517901842957,
+            1406.8841810707243,
+            118.34340746389496,
+            140.4224013937257
+          ],
+          "bbox_xyxy": [
+            502.517901842957,
+            1406.8841810707243,
+            620.8613093068519,
+            1547.30658246445
+          ],
+          "area": 15499,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\2b7c0916-futbot_000101\\000207_robot.png"
+        },
+        {
+          "ann_id": 208,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            60.054863489140736,
+            720.6583618696889,
+            147.4876794512721,
+            122.75920624986098
+          ],
+          "bbox_xyxy": [
+            60.054863489140736,
+            720.6583618696889,
+            207.54254294041283,
+            843.4175681195499
+          ],
+          "area": 13899,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\2b7c0916-futbot_000101\\000208_robot.png"
+        },
+        {
+          "ann_id": 209,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            282.8319422935289,
+            1599.806783551585,
+            434.5059606956024,
+            292.229825867941
+          ],
+          "bbox_xyxy": [
+            282.8319422935289,
+            1599.806783551585,
+            717.3379029891314,
+            1892.036609419526
+          ],
+          "area": 35948,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\2b7c0916-futbot_000101\\000209_ball.png"
+        },
+        {
+          "ann_id": 210,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            458.3599139832947,
+            131.59080382179366,
+            432.7482810246905,
+            120.9928867354747
+          ],
+          "bbox_xyxy": [
+            458.3599139832947,
+            131.59080382179366,
+            891.1081950079852,
+            252.58369055726837
+          ],
+          "area": 37271,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\2b7c0916-futbot_000101\\000210_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 46,
+      "file_name": "e3dc6f9a-futbot_000102.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000102.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\e3dc6f9a-futbot_000102.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\e3dc6f9a-futbot_000102.png",
+      "instances": [
+        {
+          "ann_id": 211,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            278.64988570698563,
+            1611.8061700663386,
+            431.82716162430313,
+            299.3405958542795
+          ],
+          "bbox_xyxy": [
+            278.64988570698563,
+            1611.8061700663386,
+            710.4770473312888,
+            1911.1467659206182
+          ],
+          "area": 35170,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\e3dc6f9a-futbot_000102\\000211_goal.png"
+        },
+        {
+          "ann_id": 212,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            456.54917683207697,
+            138.4289049286756,
+            437.24899297183447,
+            115.80110316149131
+          ],
+          "bbox_xyxy": [
+            456.54917683207697,
+            138.4289049286756,
+            893.7981698039114,
+            254.2300080901669
+          ],
+          "area": 37202,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\e3dc6f9a-futbot_000102\\000212_goal.png"
+        },
+        {
+          "ann_id": 213,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            516.4462991569884,
+            1555.9941332848439,
+            25.955419674127015,
+            20.631231023023794
+          ],
+          "bbox_xyxy": [
+            516.4462991569884,
+            1555.9941332848439,
+            542.4017188311154,
+            1576.6253643078676
+          ],
+          "area": 567,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\e3dc6f9a-futbot_000102\\000213_ball.png"
+        },
+        {
+          "ann_id": 214,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            476.5148842737149,
+            1400.9271388214695,
+            137.09785776590132,
+            153.0704237192103
+          ],
+          "bbox_xyxy": [
+            476.5148842737149,
+            1400.9271388214695,
+            613.6127420396163,
+            1553.9975625406798
+          ],
+          "area": 16632,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\e3dc6f9a-futbot_000102\\000214_robot.png"
+        },
+        {
+          "ann_id": 215,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            57.23502799935695,
+            711.4447085036346,
+            152.40490013782258,
+            114.4700559987139
+          ],
+          "bbox_xyxy": [
+            57.23502799935695,
+            711.4447085036346,
+            209.63992813717954,
+            825.9147645023485
+          ],
+          "area": 13736,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\e3dc6f9a-futbot_000102\\000215_robot.png"
+        },
+        {
+          "ann_id": 216,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            69.21445246433863,
+            1580.5829734921851,
+            190.33974427693127,
+            161.056706695865
+          ],
+          "bbox_xyxy": [
+            69.21445246433863,
+            1580.5829734921851,
+            259.5541967412699,
+            1741.63968018805
+          ],
+          "area": 25234,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\e3dc6f9a-futbot_000102\\000216_robot.png"
+        }
+      ]
+    },
+    {
+      "image_id": 47,
+      "file_name": "12a85e1d-futbot_000103.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\test\\futbot_000103.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\12a85e1d-futbot_000103.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\12a85e1d-futbot_000103.png",
+      "instances": [
+        {
+          "ann_id": 217,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            81.54440154440154,
+            716.6023166023167,
+            153.20463320463318,
+            108.72586872586868
+          ],
+          "bbox_xyxy": [
+            81.54440154440154,
+            716.6023166023167,
+            234.7490347490347,
+            825.3281853281853
+          ],
+          "area": 13318,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\12a85e1d-futbot_000103\\000217_robot.png"
+        },
+        {
+          "ann_id": 218,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            499.1505791505791,
+            1415.907335907336,
+            138.37837837837833,
+            118.61003861003864
+          ],
+          "bbox_xyxy": [
+            499.1505791505791,
+            1415.907335907336,
+            637.5289575289574,
+            1534.5173745173745
+          ],
+          "area": 14488,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\12a85e1d-futbot_000103\\000218_robot.png"
+        },
+        {
+          "ann_id": 219,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            275.38199010206057,
+            1300.321682694823,
+            77.20073544099368,
+            134.43576344035733
+          ],
+          "bbox_xyxy": [
+            275.38199010206057,
+            1300.321682694823,
+            352.58272554305427,
+            1434.7574461351803
+          ],
+          "area": 6736,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\12a85e1d-futbot_000103\\000219_robot.png"
+        },
+        {
+          "ann_id": 220,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            459.06649856511575,
+            130.44262195202285,
+            435.9179458090558,
+            121.1252918125926
+          ],
+          "bbox_xyxy": [
+            459.06649856511575,
+            130.44262195202285,
+            894.9844443741715,
+            251.56791376461544
+          ],
+          "area": 37446,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\12a85e1d-futbot_000103\\000220_goal.png"
+        },
+        {
+          "ann_id": 221,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            328.96198785078997,
+            1653.358838424568,
+            315.0778154900683,
+            192.28068432113758
+          ],
+          "bbox_xyxy": [
+            328.96198785078997,
+            1653.358838424568,
+            644.0398033408583,
+            1845.6395227457056
+          ],
+          "area": 27997,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\12a85e1d-futbot_000103\\000221_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 48,
+      "file_name": "d30150b7-futbot_000104.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000104.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\d30150b7-futbot_000104.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\d30150b7-futbot_000104.png",
+      "instances": [
+        {
+          "ann_id": 222,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            365.53254032104354,
+            1649.7511720079742,
+            335.70009924025044,
+            219.98411107748743
+          ],
+          "bbox_xyxy": [
+            365.53254032104354,
+            1649.7511720079742,
+            701.232639561294,
+            1869.7352830854616
+          ],
+          "area": 27355,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\d30150b7-futbot_000104\\000222_goal.png"
+        },
+        {
+          "ann_id": 223,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            756.5555394454943,
+            1427.5125497729748,
+            30.614084743842046,
+            33.94170265078128
+          ],
+          "bbox_xyxy": [
+            756.5555394454943,
+            1427.5125497729748,
+            787.1696241893363,
+            1461.454252423756
+          ],
+          "area": 959,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\d30150b7-futbot_000104\\000223_ball.png"
+        },
+        {
+          "ann_id": 224,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            461.87336548318285,
+            129.77709837063495,
+            423.27299776268626,
+            107.81482018483518
+          ],
+          "bbox_xyxy": [
+            461.87336548318285,
+            129.77709837063495,
+            885.1463632458691,
+            237.59191855547013
+          ],
+          "area": 37570,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\d30150b7-futbot_000104\\000224_goal.png"
+        },
+        {
+          "ann_id": 225,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            716.7688971547378,
+            1152.6868429637934,
+            129.77709837063486,
+            121.79081539398062
+          ],
+          "bbox_xyxy": [
+            716.7688971547378,
+            1152.6868429637934,
+            846.5459955253727,
+            1274.477658357774
+          ],
+          "area": 14212,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\d30150b7-futbot_000104\\000225_robot.png"
+        },
+        {
+          "ann_id": 226,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            55.90398083658121,
+            711.4447085036346,
+            143.75309357978028,
+            116.46662674287754
+          ],
+          "bbox_xyxy": [
+            55.90398083658121,
+            711.4447085036346,
+            199.6570744163615,
+            827.9113352465122
+          ],
+          "area": 13106,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\d30150b7-futbot_000104\\000226_robot.png"
+        },
+        {
+          "ann_id": 227,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            209.63992813717763,
+            1301.7641251946768,
+            163.0532774400274,
+            115.80110316148283
+          ],
+          "bbox_xyxy": [
+            209.63992813717763,
+            1301.7641251946768,
+            372.69320557720505,
+            1417.5652283561597
+          ],
+          "area": 14544,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\d30150b7-futbot_000104\\000227_robot.png"
+        }
+      ]
+    },
+    {
+      "image_id": 49,
+      "file_name": "628def0b-futbot_000105.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000105.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\628def0b-futbot_000105.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\628def0b-futbot_000105.png",
+      "instances": [
+        {
+          "ann_id": 228,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            56.70733474547544,
+            733.3522233923887,
+            148.06915183540812,
+            114.59607229814824
+          ],
+          "bbox_xyxy": [
+            56.70733474547544,
+            733.3522233923887,
+            204.77648658088356,
+            847.948295690537
+          ],
+          "area": 13531,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\628def0b-futbot_000105\\000228_robot.png"
+        },
+        {
+          "ann_id": 229,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            762.6715331761675,
+            1186.8512358500066,
+            145.97369129608364,
+            142.69338362650888
+          ],
+          "bbox_xyxy": [
+            762.6715331761675,
+            1186.8512358500066,
+            908.6452244722511,
+            1329.5446194765154
+          ],
+          "area": 15779,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\628def0b-futbot_000105\\000229_robot.png"
+        },
+        {
+          "ann_id": 230,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            225.9554390160781,
+            1313.151063390572,
+            123.4666413918644,
+            93.60494207847906
+          ],
+          "bbox_xyxy": [
+            225.9554390160781,
+            1313.151063390572,
+            349.4220804079425,
+            1406.7560054690512
+          ],
+          "area": 11245,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\628def0b-futbot_000105\\000230_ball.png"
+        },
+        {
+          "ann_id": 231,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            756.2481988589876,
+            1425.5224226454804,
+            30.843462404843667,
+            35.287012073338246
+          ],
+          "bbox_xyxy": [
+            756.2481988589876,
+            1425.5224226454804,
+            787.0916612638313,
+            1460.8094347188187
+          ],
+          "area": 1163,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\628def0b-futbot_000105\\000231_ball.png"
+        },
+        {
+          "ann_id": 232,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            362.2430881724242,
+            1625.9396037892254,
+            344.99929697404934,
+            242.6177880403665
+          ],
+          "bbox_xyxy": [
+            362.2430881724242,
+            1625.9396037892254,
+            707.2423851464736,
+            1868.557391829592
+          ],
+          "area": 27914,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\628def0b-futbot_000105\\000232_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 50,
+      "file_name": "4a4c4773-futbot_000106.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000106.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\4a4c4773-futbot_000106.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\4a4c4773-futbot_000106.png",
+      "instances": [
+        {
+          "ann_id": 233,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            203.50544331217293,
+            1293.7774894905194,
+            145.74966432394393,
+            145.0841407425556
+          ],
+          "bbox_xyxy": [
+            203.50544331217293,
+            1293.7774894905194,
+            349.25510763611686,
+            1438.861630233075
+          ],
+          "area": 14711,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\4a4c4773-futbot_000106\\000233_robot.png"
+        },
+        {
+          "ann_id": 234,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            689.3376577253193,
+            1422.223540698384,
+            135.76681060312566,
+            146.41518790533183
+          ],
+          "bbox_xyxy": [
+            689.3376577253193,
+            1422.223540698384,
+            825.104468328445,
+            1568.638728603716
+          ],
+          "area": 14933,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\4a4c4773-futbot_000106\\000234_robot.png"
+        },
+        {
+          "ann_id": 235,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            354.45600279977685,
+            1625.6158147624633,
+            353.08586254961534,
+            247.1571514081401
+          ],
+          "bbox_xyxy": [
+            354.45600279977685,
+            1625.6158147624633,
+            707.5418653493922,
+            1872.7729661706035
+          ],
+          "area": 28663,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\4a4c4773-futbot_000106\\000235_goal.png"
+        },
+        {
+          "ann_id": 236,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            56.56950441796909,
+            731.410415945271,
+            145.74966432394385,
+            111.14243809177445
+          ],
+          "bbox_xyxy": [
+            56.56950441796909,
+            731.410415945271,
+            202.31916874191293,
+            842.5528540370454
+          ],
+          "area": 13359,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\4a4c4773-futbot_000106\\000236_robot.png"
+        },
+        {
+          "ann_id": 237,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            458.40097498372734,
+            120.45976823120445,
+            441.90765804154705,
+            120.45976823120449
+          ],
+          "bbox_xyxy": [
+            458.40097498372734,
+            120.45976823120445,
+            900.3086330252744,
+            240.91953646240893
+          ],
+          "area": 37343,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\4a4c4773-futbot_000106\\000237_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 51,
+      "file_name": "526202b9-futbot_000107.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000107.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\526202b9-futbot_000107.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\526202b9-futbot_000107.png",
+      "instances": [
+        {
+          "ann_id": 238,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            801.1456193984818,
+            1607.8694403290879,
+            27.28646683690279,
+            35.93827339494519
+          ],
+          "bbox_xyxy": [
+            801.1456193984818,
+            1607.8694403290879,
+            828.4320862353846,
+            1643.807713724033
+          ],
+          "area": 995,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\526202b9-futbot_000107\\000238_ball.png"
+        },
+        {
+          "ann_id": 239,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            695.3273699578101,
+            1452.136922284326,
+            124.45290971953203,
+            149.07728223088344
+          ],
+          "bbox_xyxy": [
+            695.3273699578101,
+            1452.136922284326,
+            819.7802796773422,
+            1601.2142045152093
+          ],
+          "area": 17075,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\526202b9-futbot_000107\\000239_robot.png"
+        },
+        {
+          "ann_id": 240,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            156.39804162614874,
+            1339.663437029775,
+            158.39461237031443,
+            154.40147088197654
+          ],
+          "bbox_xyxy": [
+            156.39804162614874,
+            1339.663437029775,
+            314.7926539964632,
+            1494.0649079117516
+          ],
+          "area": 17062,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\526202b9-futbot_000107\\000240_robot.png"
+        },
+        {
+          "ann_id": 241,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            276.942944245892,
+            1600.9478963103547,
+            435.65904217924646,
+            281.21149981610296
+          ],
+          "bbox_xyxy": [
+            276.942944245892,
+            1600.9478963103547,
+            712.6019864251384,
+            1882.1593961264578
+          ],
+          "area": 35129,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\526202b9-futbot_000107\\000241_goal.png"
+        },
+        {
+          "ann_id": 242,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            54.572933673805466,
+            710.0781290368491,
+            150.40832939365896,
+            129.11157478924721
+          ],
+          "bbox_xyxy": [
+            54.572933673805466,
+            710.0781290368491,
+            204.98126306746443,
+            839.1897038260963
+          ],
+          "area": 14137,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\526202b9-futbot_000107\\000242_robot.png"
+        },
+        {
+          "ann_id": 243,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            461.0630693092794,
+            127.07947174107376,
+            437.2489929718316,
+            123.12186255675623
+          ],
+          "bbox_xyxy": [
+            461.0630693092794,
+            127.07947174107376,
+            898.312062281111,
+            250.20133429783
+          ],
+          "area": 37584,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\526202b9-futbot_000107\\000243_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 52,
+      "file_name": "16177259-futbot_000108.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\val\\futbot_000108.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\16177259-futbot_000108.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\16177259-futbot_000108.png",
+      "instances": [
+        {
+          "ann_id": 244,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            790.3465677997887,
+            1701.0645052744771,
+            19.99297058334068,
+            21.810513363643985
+          ],
+          "bbox_xyxy": [
+            790.3465677997887,
+            1701.0645052744771,
+            810.3395383831294,
+            1722.8750186381212
+          ],
+          "area": 660,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\16177259-futbot_000108\\000244_ball.png"
+        },
+        {
+          "ann_id": 245,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            783.3793204752905,
+            1545.66459755852,
+            130.86308018186494,
+            154.79406012254475
+          ],
+          "bbox_xyxy": [
+            783.3793204752905,
+            1545.66459755852,
+            914.2424006571554,
+            1700.4586576810648
+          ],
+          "area": 20195,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\16177259-futbot_000108\\000245_robot.png"
+        },
+        {
+          "ann_id": 246,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            70.46008155240051,
+            1422.3394768216062,
+            176.1903715600526,
+            163.82613495934692
+          ],
+          "bbox_xyxy": [
+            70.46008155240051,
+            1422.3394768216062,
+            246.6504531124531,
+            1586.1656117809532
+          ],
+          "area": 17925,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\16177259-futbot_000108\\000246_robot.png"
+        },
+        {
+          "ann_id": 247,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            55.6390647031745,
+            700.2680593404081,
+            161.35328763920606,
+            117.46024770670192
+          ],
+          "bbox_xyxy": [
+            55.6390647031745,
+            700.2680593404081,
+            216.99235234238057,
+            817.72830704711
+          ],
+          "area": 13740,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\16177259-futbot_000108\\000247_robot.png"
+        },
+        {
+          "ann_id": 248,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            464.8792291149042,
+            121.16951868691336,
+            432.7482810246905,
+            126.11521332719556
+          ],
+          "bbox_xyxy": [
+            464.8792291149042,
+            121.16951868691336,
+            897.6275101395947,
+            247.28473201410893
+          ],
+          "area": 38162,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\16177259-futbot_000108\\000248_goal.png"
+        },
+        {
+          "ann_id": 249,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            278.850949389816,
+            1599.8805888785769,
+            431.0953162896643,
+            296.43231729017054
+          ],
+          "bbox_xyxy": [
+            278.850949389816,
+            1599.8805888785769,
+            709.9462656794803,
+            1896.3129061687473
+          ],
+          "area": 35674,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\16177259-futbot_000108\\000249_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 53,
+      "file_name": "c118fb9c-futbot_000109.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000109.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\c118fb9c-futbot_000109.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\c118fb9c-futbot_000109.png",
+      "instances": [
+        {
+          "ann_id": 250,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            0.0,
+            1457.8294050301279,
+            148.8110727983267,
+            161.78878263539252
+          ],
+          "bbox_xyxy": [
+            0.0,
+            1457.8294050301279,
+            148.8110727983267,
+            1619.6181876655205
+          ],
+          "area": 16993,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\c118fb9c-futbot_000109\\000250_robot.png"
+        },
+        {
+          "ann_id": 251,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            762.4786993198463,
+            1550.5678599715923,
+            147.08071148671957,
+            186.87902165371435
+          ],
+          "bbox_xyxy": [
+            762.4786993198463,
+            1550.5678599715923,
+            909.5594108065659,
+            1737.4468816253066
+          ],
+          "area": 20855,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\c118fb9c-futbot_000109\\000251_robot.png"
+        },
+        {
+          "ann_id": 252,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            281.77957071814404,
+            1607.431949771996,
+            429.87992877118086,
+            278.6212323507087
+          ],
+          "bbox_xyxy": [
+            281.77957071814404,
+            1607.431949771996,
+            711.6594994893248,
+            1886.0531821227046
+          ],
+          "area": 35383,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\c118fb9c-futbot_000109\\000252_goal.png"
+        },
+        {
+          "ann_id": 253,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            461.1412895436555,
+            127.18155640322226,
+            435.18586986952863,
+            114.20384656615832
+          ],
+          "bbox_xyxy": [
+            461.1412895436555,
+            127.18155640322226,
+            896.3271594131841,
+            241.38540296938058
+          ],
+          "area": 37657,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\c118fb9c-futbot_000109\\000253_goal.png"
+        },
+        {
+          "ann_id": 254,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            139.294085584481,
+            723.2910282523372,
+            89.97878820363997,
+            107.28240131972541
+          ],
+          "bbox_xyxy": [
+            139.294085584481,
+            723.2910282523372,
+            229.27287378812096,
+            830.5734295720627
+          ],
+          "area": 8467,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\c118fb9c-futbot_000109\\000254_robot.png"
+        }
+      ]
+    },
+    {
+      "image_id": 54,
+      "file_name": "e962fdef-futbot_000110.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000110.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\e962fdef-futbot_000110.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\e962fdef-futbot_000110.png",
+      "instances": [
+        {
+          "ann_id": 255,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            770.965250965251,
+            1593.8223938223937,
+            153.20463320463318,
+            180.38610038610022
+          ],
+          "bbox_xyxy": [
+            770.965250965251,
+            1593.8223938223937,
+            924.1698841698842,
+            1774.208494208494
+          ],
+          "area": 22241,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\e962fdef-futbot_000110\\000255_robot.png"
+        },
+        {
+          "ann_id": 256,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            0.0,
+            1467.799227799229,
+            98.84169884169891,
+            163.08880308880208
+          ],
+          "bbox_xyxy": [
+            0.0,
+            1467.799227799229,
+            98.84169884169891,
+            1630.888030888031
+          ],
+          "area": 11640,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\e962fdef-futbot_000110\\000256_robot.png"
+        },
+        {
+          "ann_id": 257,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            237.22007722007726,
+            736.3706563706563,
+            145.79150579150567,
+            130.965250965251
+          ],
+          "bbox_xyxy": [
+            237.22007722007726,
+            736.3706563706563,
+            383.01158301158296,
+            867.3359073359073
+          ],
+          "area": 13757,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\e962fdef-futbot_000110\\000257_robot.png"
+        },
+        {
+          "ann_id": 258,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            467.0270270270269,
+            125.24633598121747,
+            426.37467496258023,
+            115.22161375185091
+          ],
+          "bbox_xyxy": [
+            467.0270270270269,
+            125.24633598121747,
+            893.4017019896071,
+            240.4679497330684
+          ],
+          "area": 37699,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\e962fdef-futbot_000110\\000258_goal.png"
+        },
+        {
+          "ann_id": 259,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            286.64435174254305,
+            1600.990910690219,
+            424.3752713303023,
+            287.4436100605661
+          ],
+          "bbox_xyxy": [
+            286.64435174254305,
+            1600.990910690219,
+            711.0196230728454,
+            1888.434520750785
+          ],
+          "area": 35400,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\e962fdef-futbot_000110\\000259_goal.png"
+        }
+      ]
+    },
+    {
+      "image_id": 55,
+      "file_name": "129bb5e6-futbot_000111.jpg",
+      "source_image_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\yolo_bbox\\images\\train\\futbot_000111.jpg",
+      "width": 1080,
+      "height": 1920,
+      "semantic_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic\\129bb5e6-futbot_000111.png",
+      "instance_id_mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids\\129bb5e6-futbot_000111.png",
+      "instances": [
+        {
+          "ann_id": 260,
+          "category_id": 0,
+          "class_name": "ball",
+          "bbox_coco": [
+            645.3273436268692,
+            1640.519212366965,
+            27.26314170455544,
+            32.4128462487487
+          ],
+          "bbox_xyxy": [
+            645.3273436268692,
+            1640.519212366965,
+            672.5904853314246,
+            1672.9320586157137
+          ],
+          "area": 952,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\129bb5e6-futbot_000111\\000260_ball.png"
+        },
+        {
+          "ann_id": 261,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            790.730766051165,
+            1596.595261842958,
+            120.56367109347886,
+            154.49113632581484
+          ],
+          "bbox_xyxy": [
+            790.730766051165,
+            1596.595261842958,
+            911.2944371446439,
+            1751.0863981687728
+          ],
+          "area": 16255,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\129bb5e6-futbot_000111\\000261_robot.png"
+        },
+        {
+          "ann_id": 262,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            285.4634532081363,
+            1599.9200537879317,
+            417.0158914070747,
+            286.42233340094117
+          ],
+          "bbox_xyxy": [
+            285.4634532081363,
+            1599.9200537879317,
+            702.479344615211,
+            1886.3423871888729
+          ],
+          "area": 34819,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\129bb5e6-futbot_000111\\000262_goal.png"
+        },
+        {
+          "ann_id": 263,
+          "category_id": 2,
+          "class_name": "robot",
+          "bbox_coco": [
+            271.13487067903844,
+            788.3991810974387,
+            128.15346606952008,
+            106.30912526221482
+          ],
+          "bbox_xyxy": [
+            271.13487067903844,
+            788.3991810974387,
+            399.28833674855855,
+            894.7083063596535
+          ],
+          "area": 11994,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\129bb5e6-futbot_000111\\000263_robot.png"
+        },
+        {
+          "ann_id": 264,
+          "category_id": 1,
+          "class_name": "goal",
+          "bbox_coco": [
+            464.96044882544624,
+            120.38658933803418,
+            428.63450961888776,
+            125.240887295213
+          ],
+          "bbox_xyxy": [
+            464.96044882544624,
+            120.38658933803418,
+            893.594958444334,
+            245.62747663324717
+          ],
+          "area": 38505,
+          "mask_path": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances\\129bb5e6-futbot_000111\\000264_goal.png"
+        }
+      ]
+    }
+  ]
+}

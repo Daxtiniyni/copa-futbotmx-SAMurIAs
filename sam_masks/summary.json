@@ -1,0 +1,10 @@
+{
+  "processed_images": 56,
+  "total_instances": 264,
+  "missing_images": 0,
+  "manifest": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\manifest_sam_masks.json",
+  "semantic_masks_dir": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_semantic",
+  "instance_masks_dir": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instances",
+  "instance_id_masks_dir": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\masks_instance_ids",
+  "overlays_dir": "C:\\Users\\guill\\Desktop\\Finnetunning SAM\\dataset\\sam_masks\\overlays"
+}

@@ -1,165 +1,308 @@
-# SAMurIAs
+# SAMurIAs - FutBotMX SAM3 Match Analyzer
 
-Pipeline de visión por computadora desarrollado por el equipo **SAMurIAs** para
-la **Copa FutBotMX 2026**.
+Plataforma de análisis automático de partidos de fútbol robótico desarrollada
+por el equipo **SAMurIAs** para la **Copa FutBotMX 2026**.
 
-Repositorio oficial de entrega:
-[Daxtiniyni/copa-futbotmx-SAMurIAs](https://github.com/Daxtiniyni/copa-futbotmx-SAMurIAs).
+La solución integra detección y segmentación, seguimiento multiobjeto,
+analítica deportiva, generación de narraciones y síntesis de voz. Su componente
+central es Segment Anything Model 3 (SAM3), utilizado para refinar las
+segmentaciones generadas a partir de las detecciones de un modelo YOLO11-Seg
+especializado.
 
-SAMurIAs utiliza SAM 3 y SAM 3.1 para detectar, segmentar y analizar elementos
-de partidos de fútbol robótico:
+## Equipo
 
-- Robots de ambos equipos.
-- Balón.
-- Cancha.
-- Resultados visuales con máscaras de color.
-- Exportación de detecciones y métricas en JSON.
+- Guillermo Dávalos Gutiérrez
+- Andrea Guadalupe Lara González
+- Marco Antonio Pérez Doimeadios
+- Arturo Morales Téllez
 
-## Estado actual
+## Objetivo
 
-El prototipo permite:
+Transformar un video de fútbol robótico en una experiencia completa de análisis
+deportivo asistido por inteligencia artificial:
 
-1. Segmentar imágenes mediante prompts de texto.
-2. Identificar robots y balón.
-3. Procesar videos de fútbol robótico.
-4. Clasificar visualmente robots entre equipo rojo y equipo azul.
-5. Generar videos anotados y registros JSON.
-6. Explorar resultados desde una plataforma web.
-7. Mantener identidades temporales y dibujar trayectorias de robots y balón.
-8. Calibrar una cancha fija mediante homografía.
-9. Generar mapas de calor sobre un campo canónico y narrativa automática.
+- Detectar robots, balón y porterías.
+- Seguir objetos a lo largo del partido.
+- Identificar posesiones, pases, intercepciones, tiros, goles y colisiones.
+- Calcular métricas de movimiento, posesión y distribución territorial.
+- Generar mapas de calor y trayectorias.
+- Producir narraciones automáticas y convertirlas a voz.
+- Presentar resultados en un dashboard interactivo.
+
+## Arquitectura
+
+```text
+Video del partido
+        |
+        v
+Construcción del dataset
+        |
+        v
+Fine-tuning YOLO11-Seg
+        |
+        v
+Detección de objetos
+        |
+        v
+Refinamiento de máscaras con SAM3
+        |
+        v
+Tracking multiobjeto con ByteTrack
+        |
+        v
+Métricas y detección de eventos
+        |
+        v
+Narración y síntesis de voz
+        |
+        v
+Dashboard interactivo
+```
+
+## Metodología
+
+### 1. Construcción del dataset
+
+Se extrajeron cuadros representativos de los videos y se anotaron máscaras para
+tres clases:
+
+- `ball`
+- `goal`
+- `robot`
+
+El dataset incluido contiene 56 imágenes anotadas y 264 instancias segmentadas.
+Las anotaciones originales están en `sam_masks/` y su conversión a YOLO
+Segmentation se encuentra en `data/yolo_seg/`.
+
+### 2. Fine-tuning
+
+El detector YOLO11-Seg fue ajustado con datos específicos de fútbol robótico.
+El checkpoint seleccionado se incluye en:
+
+```text
+models/futbotmx_yolo11_seg_best.pt
+```
+
+Los principales resultados de entrenamiento se encuentran en
+`artifacts/training/`.
+
+### 3. Integración de SAM3
+
+El pipeline combina la velocidad de YOLO con el refinamiento espacial de SAM3:
+
+```text
+YOLO fine-tuned -> bounding boxes -> SAM3 -> máscaras refinadas
+```
+
+El checkpoint de SAM3 no se distribuye en este repositorio. Debe descargarse
+desde la fuente oficial correspondiente y colocarse en:
+
+```text
+models/sam3.pt
+```
+
+### 4. Tracking y analítica
+
+ByteTrack mantiene identidades temporales para robots y balón. Cada registro
+incluye ID, clase, confianza, posición, tiempo y trayectoria. Esos registros
+alimentan:
+
+- Distancia recorrida.
+- Velocidad promedio y máxima.
+- Posesión por equipo y robot.
+- Actividad por zonas.
+- Mapas de calor.
+- Detección de eventos.
+
+### 5. Narración y plataforma
+
+Los eventos se convierten en comentarios sincronizados. ElevenLabs puede
+generar voz cuando se proporciona una clave mediante variables de entorno. El
+dashboard principal está construido con Streamlit.
+
+## Estructura
+
+```text
+.
+├── artifacts/
+│   └── training/              # Métricas y gráficas del entrenamiento
+├── data/
+│   └── yolo_seg/              # Dataset YOLO train/val
+├── models/
+│   └── futbotmx_yolo11_seg_best.pt
+├── sam_masks/                 # Máscaras y manifiesto de anotación
+├── src/                       # Pipeline y aplicaciones
+├── .env.example
+├── requirements.txt
+└── README.md
+```
+
+Los videos originales, audios, checkpoints de terceros y los más de 2 GB de
+resultados generados no se incluyen en Git. Las ejecuciones crean la carpeta
+`outputs/` localmente.
 
 ## Requisitos
 
-- Python 3.12 o superior.
-- PyTorch 2.7 o superior.
-- Acceso autorizado a `facebook/sam3` y `facebook/sam3.1` en Hugging Face.
-- GPU NVIDIA con CUDA recomendada para video.
+- Python 3.11 o 3.12 recomendado.
+- GPU NVIDIA con CUDA para procesamiento completo de video.
+- 16 GB de VRAM recomendados.
+- 32 GB de RAM recomendados.
+- Acceso autorizado a los pesos de SAM3.
 
-El prototipo también puede ejecutarse en CPU sobre macOS, aunque el
-procesamiento es considerablemente más lento.
+El equipo de desarrollo utilizó una NVIDIA GeForce RTX 5070 Ti con CUDA 12.8.
 
 ## Instalación
 
 ```bash
-python3.12 -m venv .venv-sam3
-source .venv-sam3/bin/activate
-pip install torch torchvision
-git clone https://github.com/facebookresearch/sam3.git third_party/sam3
-pip install -e third_party/sam3
-pip install numpy==1.26.4 pillow matplotlib opencv-python einops pycocotools psutil
-hf auth login
+git clone https://github.com/Daxtiniyni/copa-futbotmx-SAMurIAs.git
+cd copa-futbotmx-SAMurIAs
+
+python -m venv .venv
 ```
 
-SAM 3 se distribuye bajo su propia licencia. Consulta el repositorio oficial
-antes de utilizar o redistribuir modelos y pesos.
+Activación en Windows:
 
-## Pruebas
+```powershell
+.venv\Scripts\activate
+```
 
-Validar la instalación:
+Activación en macOS o Linux:
 
 ```bash
-python scripts/check_sam31_install.py --with-weights
+source .venv/bin/activate
 ```
 
-Segmentar una imagen:
+Instalar dependencias:
 
 ```bash
-python scripts/run_sam3_image_prompt.py imagen.jpg \
-  --prompt "robot" \
-  --out outputs/sam3/robot.png
+pip install -r requirements.txt
 ```
 
-Procesar un video:
+Para la narración con ElevenLabs:
 
 ```bash
-python scripts/segment_robot_soccer_video.py partido.mp4 \
-  --seconds 60 \
-  --sample-fps 1 \
-  --out outputs/sam3/partido_segmentado.mp4 \
-  --json-out outputs/sam3/partido_segmentado.json
+cp .env.example .env
 ```
 
-Procesar con homografía:
+Después agrega `ELEVENLABS_API_KEY` y, opcionalmente,
+`ELEVENLABS_VOICE_ID` en `.env`.
+
+## Preparación
+
+1. Coloca los videos como `data/videos/V0.MOV` y `data/videos/V1.MOV`.
+2. Coloca el checkpoint oficial de SAM3 como `models/sam3.pt`.
+3. Verifica que `models/futbotmx_yolo11_seg_best.pt` esté disponible.
+4. Ajusta los parámetros de entrada al comienzo de cada script si los nombres
+   de tus archivos son diferentes.
+
+## Reproducción paso a paso
+
+Extraer y seleccionar cuadros:
 
 ```bash
-python scripts/segment_robot_soccer_video.py partido.mp4 \
-  --calibration data/calibrations/partido.json \
-  --out outputs/sam3/partido_segmentado.mp4 \
-  --json-out outputs/sam3/partido_segmentado.json
+python src/01_extract_frames.py
+python src/02_select_frames_to_label.py
 ```
 
-El archivo de calibración contiene cuatro puntos normalizados entre `0` y `1`,
-en orden superior izquierda, superior derecha, inferior derecha e inferior
-izquierda:
-
-```json
-{
-  "points": [[0.1, 0.2], [0.9, 0.2], [0.95, 0.9], [0.05, 0.9]],
-  "normalized": true
-}
-```
-
-## Plataforma web
-
-Iniciar el servidor:
+Convertir las máscaras al formato YOLO:
 
 ```bash
-source .venv-sam3/bin/activate
-python app.py
+python src/03_convert_manifest_to_yolo_seg.py
 ```
 
-Abrir:
+Entrenar el modelo:
+
+```bash
+python src/src04_train_yolo_seg.py
+```
+
+Probar SAM3:
+
+```bash
+python src/09_test_sam3_load.py
+python src/10_test_sam3_bbox.py
+```
+
+Ejecutar detección, refinamiento SAM3 y tracking:
+
+```bash
+python src/11_yolo_sam3_track_video.py
+```
+
+Generar analítica y visualizaciones:
+
+```bash
+python src/07_analyze_tracks.py
+python src/08_make_visualizations.py
+python src/14_detect_events.py
+```
+
+Generar narración y voz:
+
+```bash
+python src/15_generate_commentary.py
+python src/16_elevenlabs_tts.py
+python src/17_make_final_video.py
+```
+
+Ejecutar el dashboard:
+
+```bash
+streamlit run src/futbotmx_streamlit_dashboard_final.py
+```
+
+## Módulos principales
+
+- `03_convert_manifest_to_yolo_seg.py`: conversión reproducible del dataset.
+- `src04_train_yolo_seg.py`: fine-tuning de YOLO11-Seg.
+- `11_yolo_sam3_track_video.py`: YOLO, SAM3 y ByteTrack.
+- `07_analyze_tracks.py`: métricas derivadas de trayectorias.
+- `08_make_visualizations.py`: mapas de calor y trayectorias.
+- `14_detect_events.py`: inferencia de eventos deportivos.
+- `15_generate_commentary.py`: narración sincronizada.
+- `16_elevenlabs_tts.py`: síntesis de voz.
+- `17_make_final_video.py`: composición audiovisual final.
+- `futbotmx_streamlit_dashboard_final.py`: plataforma interactiva.
+
+## Artefactos generados
+
+Durante la ejecución se crean, entre otros:
 
 ```text
-http://127.0.0.1:5050
+outputs/
+├── analysis/
+├── events/
+├── final/
+├── heatmaps/
+├── narration/
+├── runs/
+├── sam3_pipeline_v0/
+├── tracking/
+└── visualizations/
 ```
 
-La plataforma permite:
+Estos directorios pueden contener videos y CSV de gran tamaño, por lo que están
+excluidos del repositorio.
 
-- Cargar un video desde el navegador.
-- Ejecutar el análisis SAM en segundo plano.
-- Reproducir el resultado segmentado.
-- Consultar métricas de presencia visual.
-- Revisar mapas de calor por equipo.
-- Calibrar una cancha de cámara fija seleccionando sus cuatro esquinas.
-- Explorar trayectorias persistentes en un mapa táctico de `900 × 600`.
-- Generar mapas de calor con coordenadas proyectadas por homografía.
-- Leer una narrativa automática del análisis.
+## Principales contribuciones
 
-Los resultados se almacenan localmente en `outputs/sam3/`. Los videos de entrada,
-pesos de modelos y resultados generados están excluidos del repositorio público.
+- Integración de SAM3 dentro de un pipeline completo de análisis deportivo.
+- Dataset especializado de fútbol robótico con máscaras por instancia.
+- Fine-tuning de YOLO11-Seg para robots, balón y porterías.
+- Tracking multiobjeto con ByteTrack.
+- Métricas tácticas y temporales.
+- Detección automática de eventos deportivos.
+- Narración generativa y síntesis de voz.
+- Dashboard interactivo para explorar el partido.
 
-## Referencias del curso FutBotMX
+## Reel de Instagram
 
-El diseño del pipeline tomó como referencia conceptual los notebooks de formación
-compartidos para la competencia, principalmente:
+Enlace público solicitado por la convocatoria:
 
-- NB09: segmentación de video, tracking y filtrado previo a SAM.
-- NB10: fundamentos de homografía y campo canónico.
-- NB11: detección HSV y uso de `BOTTOM_CENTER` para representar robots.
-- NB12: acumulación temporal de máscaras y mapas de calor.
-- NB13: integración nativa de SAM 3 desde Hugging Face.
+`PENDIENTE_DE_AGREGAR`
 
-La implementación de este repositorio es propia. Los notebooks del curso no se
-redistribuyen y permanecen fuera del historial Git.
+## Licencias
 
-La homografía implementada supone una cámara fija durante todo el video. Si la
-cámara se desplaza, cambia el zoom o gira, se requiere recalibración por tramo o
-estimación dinámica de la cancha.
-
-## Colores de visualización
-
-- Equipo rojo: rojo.
-- Equipo azul: azul.
-- Balón: amarillo.
-- Cancha: verde.
-
-## Equipo
-
-SAMurIAs.
-
-## Licencia
-
-El código propio del proyecto se publica bajo la licencia MIT. Las dependencias,
-modelos y pesos de terceros mantienen sus licencias originales.
+El código propio se distribuye bajo licencia MIT. Los modelos, datasets,
+servicios, audios y dependencias de terceros conservan sus licencias y
+condiciones de uso originales.

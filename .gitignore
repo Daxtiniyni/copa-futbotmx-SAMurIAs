@@ -1,42 +1,46 @@
 .DS_Store
-.venv*/
-node_modules/
 __pycache__/
 *.py[cod]
-
-# Third-party source and downloaded model weights
+.venv/
+venv/
+.env
+.idea/
+.vscode/
+node_modules/
 third_party/
 futbot-notebooks/
 futbot-notebooks.zip
-*.pt
-*.pth
-*.ckpt
-
-# Contest reference documents
 Convocatoria_*.pdf
-
-# Private registration documents
 CURP*.pdf
 PASAPORTE*.pdf
 *CURP*PASAPORTE*.pdf
+*.webp
 
-# Local source media
+# Videos, audio and generated media
 *.mp4
 *.mov
+*.MOV
 *.avi
-*.m4v
 *.webm
-1.webp
-2.webp
+*.wav
+*.mp3
 
-# Generated artifacts (selected samples may be force-added later)
+# Model checkpoints. The competition checkpoint in models/ is versioned.
+*.pt
+*.pth
+*.ckpt
+!models/futbotmx_yolo11_seg_best.pt
+
+# Generated files
 outputs/
+data/videos/
 data/uploads/
 data/calibrations/
+data/frames/
+data/frames_to_label/
+data/frames_v0_sample/
+data/yolo_seg/labels/*.cache
 tmp/
 
-# Local environment and editor files
-.env
-.env.*
-.idea/
-.vscode/
+# Local source package supplied for migration
+arturo/
